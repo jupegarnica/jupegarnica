@@ -1,5 +1,7 @@
 # Hi, I'm Juan 👋
-![](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&count_private=true)
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&count_private=true)
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact)
 
 - 🔭 I’m currently working on geekshubs.com
 
