@@ -2,9 +2,7 @@ name: gh-page
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - v*
+  release:
 
 jobs:
   build:
