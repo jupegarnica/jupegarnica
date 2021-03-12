@@ -72,7 +72,7 @@ var exports1 = {
 (function() {
     'use strict';
     var _assign = exports$1;
-    var ReactVersion = "17.0.0";
+    var ReactVersion = "17.0.1";
     var REACT_ELEMENT_TYPE = 60103;
     var REACT_PORTAL_TYPE = 60106;
     exports1.Fragment = 60107;
@@ -7133,7 +7133,11 @@ var exports4 = {
         return a !== NoLane && a < b ? a : b;
     }
     function createLaneMap(initial) {
-        return new Array(TotalLanes).fill(initial);
+        var laneMap = [];
+        for(var i = 0; i < TotalLanes; i++){
+            laneMap.push(initial);
+        }
+        return laneMap;
     }
     function markRootUpdated(root, updateLane, eventTime) {
         root.pendingLanes |= updateLane;
@@ -10967,7 +10971,7 @@ var exports4 = {
             }
         }
     }
-    var ReactVersion = "17.0.0";
+    var ReactVersion = "17.0.1";
     var NoMode = 0;
     var StrictMode1 = 1;
     var BlockingMode = 2;
