@@ -5,16 +5,12 @@ import {
 } from 'https://deno.land/std@0.112.0/path/mod.ts';
 
 import {
-  bgBlue,
-  bgRgb24,
-  bgRgb8,
-  rgb8,
-  bold,
-  italic,
+  underline,
+  blue,
   red,
   green,
   yellow,
-} from "https://deno.land/std@0.113.0/fmt/colors.ts";
+} from 'https://deno.land/std@0.113.0/fmt/colors.ts';
 // from https://deno.land/std/http/file_server.ts
 export const MEDIA_TYPES: Record<string, string> = {
   '.md': 'text/markdown',
@@ -148,7 +144,10 @@ export const MEDIA_TYPES: Record<string, string> = {
 const handleRequest = (folder: string) =>
   async function (request: Request): Promise<Response> {
     const { pathname } = new URL(request.url);
-    console.info(green(`${request.method}`.padStart(5)), ` ${pathname}`);
+    console.info(
+      green(`${request.method}`.padStart(5)),
+      underline(blue(`${pathname}`)),
+    );
     try {
       let { ext, dir, root, base } = parse(pathname);
       if (!ext) {
@@ -161,12 +160,11 @@ const handleRequest = (folder: string) =>
       return new Response(file, {
         headers: {
           'content-type': MEDIA_TYPES[ext],
-          'Content-Location':'/'+ path,
+          'Content-Location': '/' + path,
         },
       });
     } catch (error) {
       console.error(red(error.message));
-      console.error(red(error.stack));
       return new Response(
         `<html>
         <body style="padding:2em; font-family:sans;">
@@ -183,16 +181,16 @@ const handleRequest = (folder: string) =>
         },
       );
     }
-
-
   };
 
 async function main(folder = './', port = 8080) {
-
-  const absoluteFolderPath = join(parse(import.meta.url).dir, folder);
-  console.info(
-    yellow( `Serving folder ${absoluteFolderPath} at http://localhost:${port}`)
+  const absoluteFolderPath = join(
+    parse(import.meta.url).dir,
+    folder,
   );
+  console.info(`Serving folder ${yellow(absoluteFolderPath)}`,
+    'at',underline(blue(`http://localhost:${port}`))
+  )
   await listenAndServe(':' + port, handleRequest(folder));
 }
 if (import.meta.main) {
