@@ -2218,9 +2218,9 @@ let callback = function() {
 let startTime = null;
 let code = `[
 x-y % (t*2),
-'purple',
-'tomato',
-'#fc0'
+'grey',
+'black',
+t*16
 ]`;
 output.width = output.height = width * dpr;
 context.scale(dpr, dpr);
@@ -2321,11 +2321,15 @@ function render() {
             context.fill();
             if (index === 0) {
                 const background = typeof backgroundColor == 'string' ? backgroundColor : chooseColor(backgroundColor);
-                const bgColor = color(background);
-                const distance1 = distance(defaultTextColor, bgColor);
-                document.documentElement.style.setProperty('--text-color', distance1 < 70 ? '#400' : defaultTextColor);
-                document.documentElement.style.setProperty('--input-color', bgColor.textColor());
-                document.documentElement.style.setProperty('--background', background);
+                try {
+                    const bgColor = color(background);
+                    const distance1 = distance(defaultTextColor, bgColor);
+                    const contrastedColor = bgColor.textColor();
+                    document.documentElement.style.setProperty('--text-color', distance1 < 70 ? '#fff' : defaultTextColor);
+                    document.documentElement.style.setProperty('--input-color', contrastedColor);
+                    document.documentElement.style.setProperty('--background', background);
+                } catch (error) {
+                }
             }
             index++;
         }

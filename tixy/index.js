@@ -20,9 +20,9 @@ let callback = function () {};
 let startTime = null;
 let code = `[
 x-y % (t*2),
-'purple',
-'tomato',
-'#fc0'
+'grey',
+'black',
+t*16
 ]`;
 
 output.width = output.height = width * dpr;
@@ -165,24 +165,27 @@ function render() {
             ? backgroundColor
             : chooseColor(backgroundColor);
 
-        const bgColor = chroma.color(background);
-        const distance = chroma.distance(
-          defaultTextColor,
-          bgColor,
-        );
-        document.documentElement.style.setProperty(
-          '--text-color',
-          distance < 70 ? '#400' : defaultTextColor,
-        );
-        document.documentElement.style.setProperty(
-          '--input-color',
-          bgColor.textColor(),
-        );
+        try {
+          const bgColor = chroma.color(background);
+          const distance = chroma.distance(
+            defaultTextColor,
+            bgColor,
+          );
+          const contrastedColor = bgColor.textColor();
+          document.documentElement.style.setProperty(
+            '--text-color',
+            distance < 70 ? '#fff' : defaultTextColor,
+          );
+          document.documentElement.style.setProperty(
+            '--input-color',
+            contrastedColor,
+          );
 
-        document.documentElement.style.setProperty(
-          '--background',
-          background,
-        );
+          document.documentElement.style.setProperty(
+            '--background',
+            background,
+          );
+        } catch (error) {}
       }
       index++;
     }
