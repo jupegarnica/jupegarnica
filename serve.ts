@@ -164,13 +164,13 @@ const handleRequest = (folder: string) =>
         },
       });
     } catch (error) {
-      console.error(red(error.message));
+      console.error(red(error?.message));
       return new Response(
         `<html>
         <body style="padding:2em; font-family:sans;">
           <h1>404</h1>
-          <h2>${error.message}</h2>
-          <p ><pre>${error.stack}</pre></p>
+          <h2>${error?.message}</h2>
+          <p ><pre>${error?.stack}</pre></p>
         </body>
       </html>`,
         {
