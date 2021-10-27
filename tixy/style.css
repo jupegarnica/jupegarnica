@@ -1,0 +1,85 @@
+html {
+  background-color: #000;
+  height: 100%;
+}
+body {
+  background-color: var(--background);
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:visited {
+  color: #f24;
+}
+*,
+html,
+input {
+  font-family: monospace;
+  font-size: 14px;
+}
+body {
+  align-items: center;
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+#editor,
+#output,
+input,
+label {
+  display: block;
+}
+#editor {
+  line-height: 1.15em;
+  width: 271px;
+  background-color: #0006;
+  padding: 5px;
+  --text-shadow: 1px 1px 3px black;
+  text-shadow: var(--text-shadow);
+}
+#editor #input {
+  background: none;
+  text-shadow: var(--text-shadow);
+  border: 0;
+  color: #fff;
+  margin: 0.15em 0;
+  padding: 0;
+  width: 100%;
+}
+#editor #input:focus {
+  outline: none;
+}
+#editor label.limit-warning {
+  display: none;
+}
+#editor #comment {
+  color: #f24;
+}
+#editor.over-limit #input {
+  background: #f24;
+  color: #fff;
+}
+#editor.over-limit.focus label.limit-warning {
+  display: block;
+}
+#code-runner,
+#editor.over-limit.focus label.second {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+}
