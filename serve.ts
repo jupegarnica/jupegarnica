@@ -1,8 +1,8 @@
-import { listenAndServe } from 'https://deno.land/std@0.112.0/http/server.ts';
+import { listenAndServe } from 'https://deno.land/std@0.113.0/http/server.ts';
 import {
   parse,
   join,
-} from 'https://deno.land/std@0.112.0/path/mod.ts';
+} from 'https://deno.land/std@0.113.0/path/mod.ts';
 
 import {
   underline,
@@ -11,7 +11,9 @@ import {
   green,
   yellow,
 } from 'https://deno.land/std@0.113.0/fmt/colors.ts';
-// from https://deno.land/std/http/file_server.ts
+
+
+// MEDIA_TYPES from https://deno.land/std/http/file_server.ts
 export const MEDIA_TYPES: Record<string, string> = {
   '.md': 'text/markdown',
   '.html': 'text/html',
@@ -183,7 +185,7 @@ const handleRequest = (folder: string) =>
     }
   };
 
-async function main(folder = './', port = 8080) {
+export async function main(folder = './', port = 8080) {
   const absoluteFolderPath = join(
     parse(import.meta.url).dir,
     folder,
@@ -194,9 +196,5 @@ async function main(folder = './', port = 8080) {
   await listenAndServe(':' + port, handleRequest(folder));
 }
 if (import.meta.main) {
-  if (Deno.args?.length) {
-    await main(Deno.args[0]);
-  } else {
-    await main();
-  }
+  await main(Deno.args?.[0]);
 }
