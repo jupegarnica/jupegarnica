@@ -13,7 +13,11 @@ const __default = {
     "To use colors return an array,\nwhere the first value is the radius of the dot": "[.3, 'tomato']",
     "the second one\nis the color for positive values": "[.6, i]",
     "the third one\nis  for negative values": "[sin(t), 192, 16]",
+<<<<<<< HEAD
     "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'white'\n]",
+=======
+    "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'purple'\n]",
+>>>>>>> 3fde85edcf133c385e200a1eb4912bc355dc8aeb
     "you can represent a color\nas a number or string\n": "[tan(t), 55, '#0cf']",
     "as string\nany valid css string works": "[1, 'hsl(200,100%,50%)']",
     "as number there are 256 color\na 0 to 255 rainbow palette": "[1, i]",
