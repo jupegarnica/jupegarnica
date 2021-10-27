@@ -10,6 +10,14 @@ const __default = {
     "multiply the time\nto change the speed": "y - t*4",
     "create patterns using \ndifferent color": "[1, 0, -1][i%3]",
     "skip `Math.` to use methods \nand props like `sin` or `PI`": "sin(t-sqrt((x-7.5)**2+(y-6)**2))",
+    "To use colors return an array,\nwhere the first value is the radius of the dot": "[.3, 'tomato']",
+    "the second one\nis the color for positive values": "[.6, i]",
+    "the third one\nis  for negative values": "[sin(t), 192, 16]",
+    "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'purple'\n]",
+    "you can represent a color\nas a number or string\n": "[tan(t), 55, '#0cf']",
+    "as string\nany valid css string works": "[1, 'hsl(200,100%,50%)']",
+    "as number there are 256 color\na 0 to 255 rainbow palette": "[1, i]",
+    "have fun": "[\n1,\n'#fc0',\n`hsl(${100+10*sin(t)},100%,50%)`,\n16*t\n]",
     "more examples ...": "sin(y/8 + t)",
     "simple triangle": "y - x",
     "quarter triangle": "(y > x) && (14-x < y)",
@@ -2217,10 +2225,10 @@ let callback = function() {
 };
 let startTime = null;
 let code = `[
- x - y % t,
- 'grey',
- '#333',
- t*16
+  x - y % t ,
+  'black',
+  '#da0',
+  t*16
 ]`;
 output.width = output.height = width * dpr;
 context.scale(dpr, dpr);

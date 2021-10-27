@@ -39,6 +39,9 @@ input,
 label {
   display: block;
 }
+#comment {
+  margin-bottom: 1em;
+}
 #editor {
   line-height: 1.15em;
   width: 271px;
@@ -91,12 +94,13 @@ label {
 }
 
 footer {
+  opacity: 0.5;
   padding: 0 1em;
-  color: #aaa;
+  color: var(--input-color);
 
 }
 footer a {
-  color: #aaa!important;
+  color: var(--input-color)!important;
 }
 .links {
   display: flex;
