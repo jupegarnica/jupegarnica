@@ -1,23 +1,23 @@
-import examples from "./examples.json.js";
+import examples from './examples.json.js';
 
-import {chooseColor} from './colors.js';
+import { chooseColor } from './colors.js';
 
 const count = 16;
 const size = 16;
 const spacing = 1;
 const width = count * (size + spacing) - spacing;
-const MAX_COLORS = Number.parseInt("FFF", 16);
+const MAX_COLORS = Number.parseInt('FFF', 16);
 
-const input = document.getElementById("input");
-const editor = document.getElementById("editor");
-const comment = document.getElementById("comment");
-const output = document.getElementById("output");
-const context = output.getContext("2d");
+const input = document.getElementById('input');
+const editor = document.getElementById('editor');
+const comment = document.getElementById('comment');
+const output = document.getElementById('output');
+const context = output.getContext('2d');
 const dpr = window.devicePixelRatio || 1;
 
 let callback = function () {};
 let startTime = null;
-let code = "Math.sin(y/8+t)";
+let code = 'Math.sin(y/8+t)';
 
 output.width = output.height = width * dpr;
 context.scale(dpr, dpr);
@@ -26,16 +26,16 @@ output.style.width = output.style.height = `${width}px`;
 function readURL() {
   const url = new URL(document.location);
 
-  input.value = url.searchParams.get("code") || code;
+  input.value = url.searchParams.get('code') || code;
 }
 
 readURL();
 
 function checkLength() {
   if (code.length > 32) {
-    editor.classList.add("over-limit");
+    editor.classList.add('over-limit');
   } else {
-    editor.classList.remove("over-limit");
+    editor.classList.remove('over-limit');
   }
 }
 
@@ -47,10 +47,10 @@ function updateCallback() {
 
   try {
     callback = new Function(
-      "t",
-      "i",
-      "x",
-      "y",
+      't',
+      'i',
+      'x',
+      'y',
       `
       try {
         with (Math) {
@@ -59,35 +59,35 @@ function updateCallback() {
       } catch (error) {
         return error;
       }
-    `
+    `,
     );
   } catch (error) {
     callback = null;
   }
 }
 
-input.addEventListener("input", updateCallback);
+input.addEventListener('input', updateCallback);
 updateCallback();
 
-input.addEventListener("focus", function () {
-  editor.classList.add("focus");
+input.addEventListener('focus', function () {
+  editor.classList.add('focus');
   updateComments([
     'hit "enter" to save in URL',
     'or get <a href="https://twitter.com/aemkei/status/1323399877611708416">more info here</a>',
   ]);
 });
 
-input.addEventListener("blur", function () {
+input.addEventListener('blur', function () {
   updateCommentsForCode();
-  editor.classList.remove("focus");
+  editor.classList.remove('focus');
 });
 
-input.addEventListener("keyup", (event) => {
+input.addEventListener('keyup', (event) => {
   event.preventDefault();
-  if (!event.shiftKey && event.key === "Enter") {
+  if (!event.shiftKey && event.key === 'Enter') {
     const url = new URL(document.location);
     const param = code.trim();
-    url.searchParams.set("code", param);
+    url.searchParams.set('code', param);
     history.replaceState(null, param, url);
   }
 });
@@ -115,12 +115,16 @@ function render() {
       const isArray = Array.isArray(returned);
       let value;
 
-      let positiveColor = "#fff";
-      let negativeColor = "#f24";
-      let backgroundColor = "#000";
+      let positiveColor = '#fff';
+      let negativeColor = '#f24';
+      let backgroundColor = '#000';
       if (isArray) {
-        [value, positiveColor = positiveColor, negativeColor = negativeColor, backgroundColor = backgroundColor] =
-          returned;
+        [
+          value,
+          positiveColor = positiveColor,
+          negativeColor = negativeColor,
+          backgroundColor = backgroundColor,
+        ] = returned;
       } else {
         value = Number(returned);
       }
@@ -137,18 +141,23 @@ function render() {
         radius = size / 2;
       }
       const fillStyle =
-        typeof color == "string" ? color : chooseColor(color);
-        const background =
-        typeof backgroundColor == "string" ? backgroundColor : chooseColor(backgroundColor);
-        context.beginPath();
-      document.documentElement.style.setProperty('--background',background);
+        typeof color == 'string' ? color : chooseColor(color);
+      const background =
+        typeof backgroundColor == 'string'
+          ? backgroundColor
+          : chooseColor(backgroundColor);
+      context.beginPath();
+      document.documentElement.style.setProperty(
+        '--background',
+        background,
+      );
       context.fillStyle = fillStyle;
       context.arc(
         x * (size + spacing) + offset,
         y * (size + spacing) + offset,
         radius,
         0,
-        2 * Math.PI
+        2 * Math.PI,
       );
       context.fill();
       index++;
@@ -161,10 +170,10 @@ function render() {
 render();
 
 function updateComments(comments) {
-  const lines = comment.querySelectorAll("label");
+  const lines = comment.querySelectorAll('label');
 
   if (comments.length === 1) {
-    lines[0].innerHTML = "&nbsp;";
+    lines[0].innerHTML = '&nbsp;';
     lines[1].innerHTML = `// ${comments[0]}`;
   } else {
     lines[0].innerHTML = `// ${comments[0]}`;
@@ -184,7 +193,7 @@ function updateCommentsForCode() {
     return;
   }
 
-  const newComments = newComment.split("\n");
+  const newComments = newComment.split('\n');
 
   updateComments(newComments);
 }
@@ -204,18 +213,12 @@ function nextExample() {
   input.value = newCode;
 
   updateCommentsForCode();
-
-  // history.replaceState({
-  //   code: newCode,
-  //   comment: newComment
-  // }, code, `?code=${encodeURIComponent(newCode)}`);
-
   updateCallback();
 }
 
-output.addEventListener("click", nextExample);
+output.addEventListener('click', nextExample);
 
-window.onpopstate = function (event) {
+window.onpopstate = function () {
   readURL();
   updateCallback();
 };
