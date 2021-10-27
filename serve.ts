@@ -8,6 +8,7 @@ import {
   bgBlue,
   bgRgb24,
   bgRgb8,
+  rgb8,
   bold,
   italic,
   red,
@@ -194,7 +195,6 @@ async function main(folder = './', port = 8080) {
   );
   await listenAndServe(':' + port, handleRequest(folder));
 }
-
 if (import.meta.main) {
   await main(Deno.args[0]);
 }
