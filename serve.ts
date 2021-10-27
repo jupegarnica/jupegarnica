@@ -194,7 +194,7 @@ async function main(folder = './', port = 8080) {
   await listenAndServe(':' + port, handleRequest(folder));
 }
 if (import.meta.main) {
-  if (Deno.args.length > 0) {
+  if (Deno.args?.length) {
     await main(Deno.args[0]);
   } else {
     await main();
