@@ -1,3 +1,8 @@
 scripts:
   start: deno run --allow-net --allow-read=./ serve.ts
   dev: deno run --allow-net --allow-read=./ --watch serve.ts
+  bundle-tixy: deno bundle --watch tixy/index.js tixy/bundle.js
+  tixy:
+    pll:
+      - vr dev
+      - vr bundle-tixy

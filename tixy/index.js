@@ -2,22 +2,28 @@ import examples from './examples.json.js';
 
 import { chooseColor } from './colors.js';
 
+import * as chroma from 'https://deno.land/x/chroma@v1.0.10/index.ts';
+
 const count = 16;
 const size = 16;
 const spacing = 1;
 const width = count * (size + spacing) - spacing;
-const MAX_COLORS = Number.parseInt('FFF', 16);
-
 const input = document.getElementById('input');
 const editor = document.getElementById('editor');
 const comment = document.getElementById('comment');
 const output = document.getElementById('output');
 const context = output.getContext('2d');
 const dpr = window.devicePixelRatio || 1;
+const defaultTextColor = '#f24';
 
 let callback = function () {};
 let startTime = null;
-let code = 'Math.sin(y/8+t)';
+let code = `[
+x-y % (t*2),
+'purple',
+'tomato',
+'#fc0'
+]`;
 
 output.width = output.height = width * dpr;
 context.scale(dpr, dpr);
@@ -116,7 +122,7 @@ function render() {
       let value;
 
       let positiveColor = '#fff';
-      let negativeColor = '#f24';
+      let negativeColor = defaultTextColor;
       let backgroundColor = '#000';
       if (isArray) {
         [
@@ -142,15 +148,7 @@ function render() {
       }
       const fillStyle =
         typeof color == 'string' ? color : chooseColor(color);
-      const background =
-        typeof backgroundColor == 'string'
-          ? backgroundColor
-          : chooseColor(backgroundColor);
       context.beginPath();
-      document.documentElement.style.setProperty(
-        '--background',
-        background,
-      );
       context.fillStyle = fillStyle;
       context.arc(
         x * (size + spacing) + offset,
@@ -160,6 +158,32 @@ function render() {
         2 * Math.PI,
       );
       context.fill();
+
+      if (index === 0) {
+        const background =
+          typeof backgroundColor == 'string'
+            ? backgroundColor
+            : chooseColor(backgroundColor);
+
+        const bgColor = chroma.color(background);
+        const distance = chroma.distance(
+          defaultTextColor,
+          bgColor,
+        );
+        document.documentElement.style.setProperty(
+          '--text-color',
+          distance < 70 ? '#400' : defaultTextColor,
+        );
+        document.documentElement.style.setProperty(
+          '--input-color',
+          bgColor.textColor(),
+        );
+
+        document.documentElement.style.setProperty(
+          '--background',
+          background,
+        );
+      }
       index++;
     }
   }
