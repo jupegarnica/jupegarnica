@@ -146,7 +146,7 @@ const handleRequest = (folder: string) =>
     const { pathname } = new URL(request.url);
     console.info(
       green(`${request.method}`.padStart(5)),
-      underline(blue(`${pathname}`)),
+      ((`${pathname}`.replace('/',''))),
     );
     try {
       let { ext, dir, root, base } = parse(pathname);

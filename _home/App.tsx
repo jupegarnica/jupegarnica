@@ -25,7 +25,7 @@ export default function App() {
           Hi <Hand />
         </div>
 
-        <div>I am a code developer,</div>
+        <div>I am a web developer,</div>
 
         <div>a web artist in love with minimalism.</div>
 

@@ -106,13 +106,13 @@ main {
     /* transition: font-size 2000ms ease !important; */
     /* position: absolute; */
     color: black;
-    cursor: url(/static/images/call.svg), auto;
+    cursor: url(/home/static/images/call.svg), auto;
   }
   .index .hand:hover {
-    cursor: url(/static/images/hand.svg), auto;
+    cursor: url(/home/static/images/hand.svg), auto;
   }
   .index .github:hover {
-    cursor: url(/static/images/lightbulb.svg), auto;
+    cursor: url(/home/static/images/lightbulb.svg), auto;
   }
   .hand {
     fill: indigo;
