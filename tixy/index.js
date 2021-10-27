@@ -19,10 +19,10 @@ const defaultTextColor = '#f24';
 let callback = function () {};
 let startTime = null;
 let code = `[
- x - y % t,
- 'grey',
- '#333',
- t*16
+  x - y % t ,
+  'black',
+  '#da0',
+  t*16
 ]`;
 
 output.width = output.height = width * dpr;
