@@ -22708,7 +22708,7 @@ function App() {
         onTypingDone: ()=>animate(true)
         ,
         avgTypingDelay: 60
-    }, react.createElement("div", null, "Hi ", react.createElement(Hand, null)), react.createElement("div", null, "I am a code developer,"), react.createElement("div", null, "a web artist in love with minimalism."), react.createElement("div", null, "My thoughts are on", ' ', react.createElement("a", {
+    }, react.createElement("div", null, "Hi ", react.createElement(Hand, null)), react.createElement("div", null, "I am a web developer,"), react.createElement("div", null, "a web artist in love with minimalism."), react.createElement("div", null, "My thoughts are on", ' ', react.createElement("a", {
         className: "twitter",
         href: "https://twitter.com/jupegarnica"
     }, "twitter")), react.createElement("div", null, "And some of my work at", ' ', react.createElement("a", {
