@@ -170,7 +170,7 @@ const handleRequest = (folder: string) =>
         <body style="padding:2em; font-family:sans;">
           <h1>404</h1>
           <h2>${error?.message}</h2>
-          <p ><pre>${error?.stack}</pre></p>
+          <p><pre>${error?.stack}</pre></p>
         </body>
       </html>`,
         {
@@ -194,5 +194,9 @@ async function main(folder = './', port = 8080) {
   await listenAndServe(':' + port, handleRequest(folder));
 }
 if (import.meta.main) {
-  await main(Deno.args[0]);
+  if (Deno.args.length > 0) {
+    await main(Deno.args[0]);
+  } else {
+    await main();
+  }
 }
