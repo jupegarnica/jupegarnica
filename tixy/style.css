@@ -89,3 +89,19 @@ label {
 ::-webkit-scrollbar-thumb:hover {
   width: 10px;
 }
+
+footer {
+  padding: 0 1em;
+  color: #aaa;
+
+}
+footer a {
+  color: #aaa!important;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5em;
+  /* color: #aaa; */
+}

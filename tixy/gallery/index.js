@@ -54,7 +54,7 @@ fetch('./snippets.txt')
       const canvas = document.createElement('canvas');
       const context = canvas.getContext('2d');
 
-      const url = new URL('/', document.location);
+      const url = new URL('/tixy', document.location);
       url.searchParams.set('code', code);
 
       link.appendChild(canvas);

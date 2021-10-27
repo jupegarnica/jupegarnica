@@ -2217,10 +2217,10 @@ let callback = function() {
 };
 let startTime = null;
 let code = `[
-x-y % (t*2),
-'grey',
-'black',
-t*16
+ x - y % t,
+ 'grey',
+ '#333',
+ t*16
 ]`;
 output.width = output.height = width * dpr;
 context.scale(dpr, dpr);
