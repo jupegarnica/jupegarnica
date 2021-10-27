@@ -7,11 +7,12 @@ import {
 import {
   underline,
   blue,
+  dim,
+  white,
   red,
   green,
   yellow,
 } from 'https://deno.land/std@0.113.0/fmt/colors.ts';
-
 
 // MEDIA_TYPES from https://deno.land/std/http/file_server.ts
 export const MEDIA_TYPES: Record<string, string> = {
@@ -146,28 +147,27 @@ export const MEDIA_TYPES: Record<string, string> = {
 const handleRequest = (folder: string) =>
   async function (request: Request): Promise<Response> {
     const { pathname } = new URL(request.url);
-    console.info(
-      green(`${request.method}`.padStart(5)),
-      ((`${pathname}`.replace('/',''))),
-    );
+    const startTime = Date.now();
+    let response;
+    let status = 200;
+    let { ext, dir, root, base } = parse(pathname);
+    if (!ext) {
+      ext = '.html';
+      base = join(base, 'index.html');
+    }
+    const path = join(folder, root, dir, base);
     try {
-      let { ext, dir, root, base } = parse(pathname);
-      if (!ext) {
-        ext = '.html';
-        base = join(base, 'index.html');
-      }
-      const path = join(folder, root, dir, base);
       const file = await Deno.readFile(path);
-
-      return new Response(file, {
+      response = new Response(file, {
+        status,
         headers: {
           'content-type': MEDIA_TYPES[ext],
-          'Content-Location': '/' + path,
         },
       });
     } catch (error) {
       console.error(red(error?.message));
-      return new Response(
+      status = 404;
+      response = new Response(
         `<html>
         <body style="padding:2em; font-family:sans;">
           <h1>404</h1>
@@ -176,13 +176,25 @@ const handleRequest = (folder: string) =>
         </body>
       </html>`,
         {
-          status: 404,
+          status,
           headers: {
             'content-type': 'text/html; charset=utf-8',
           },
         },
       );
     }
+    const success = status >= 200 && status < 300;
+    const colorize = success ? green : red;
+    const icon = success ? '✓' : '✗';
+    console.info(
+      colorize(icon),
+      colorize(`${request.method}`.padEnd(4)),
+      colorize(`${status}`),
+      dim(`${Date.now() - startTime}ms`.padStart(5)),
+      white(`${path}`),
+    );
+
+    return response;
   };
 
 export async function main(folder = './', port = 8080) {
@@ -190,9 +202,11 @@ export async function main(folder = './', port = 8080) {
     parse(import.meta.url).dir,
     folder,
   );
-  console.info(`Serving folder ${yellow(absoluteFolderPath)}`,
-    'at',underline(blue(`http://localhost:${port}`))
-  )
+  console.info(
+    `Serving folder ${yellow(absoluteFolderPath)}`,
+    'at',
+    underline(blue(`http://localhost:${port}`)),
+  );
   await listenAndServe(':' + port, handleRequest(folder));
 }
 if (import.meta.main) {
