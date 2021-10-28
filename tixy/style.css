@@ -8,7 +8,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: var(--background);
+  background: var(--background);
   color: var(--input-color);
 }
 

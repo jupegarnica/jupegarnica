@@ -13,15 +13,11 @@ const __default = {
     "To use colors return an array,\nwhere the first value is the radius of the dot": "[.3, 'tomato']",
     "the second one\nis the color for positive values": "[.6, i]",
     "the third one\nis  for negative values": "[sin(t), 192, 16]",
-<<<<<<< HEAD
     "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'white'\n]",
-=======
-    "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'purple'\n]",
->>>>>>> 3fde85edcf133c385e200a1eb4912bc355dc8aeb
     "you can represent a color\nas a number or string\n": "[tan(t), 55, '#0cf']",
     "as string\nany valid css string works": "[1, 'hsl(200,100%,50%)']",
     "as number there are 256 color\na 0 to 255 rainbow palette": "[1, i]",
-    "have fun": "[\n1,\n'#fc0',\n`hsl(${100+10*sin(t)},100%,50%)`,\n16*t\n]",
+    "have fun": "[\n1,\n'#fc0',\n`hsl(${100+10*sin(t)},100%,50%)`,\n`linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)`\n]",
     "more examples ...": "sin(y/8 + t)",
     "simple triangle": "y - x",
     "quarter triangle": "(y > x) && (14-x < y)",
@@ -2229,11 +2225,12 @@ let callback = function() {
 };
 let startTime = null;
 let code = `[
-  x - y % t ,
-  'black',
-  '#da0',
-  t*16
-]`;
+  -1,
+  '#fc0',
+  'hsl(145,100%,50%)',
+  'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)',
+  ]
+`;
 output.width = output.height = width * dpr;
 context.scale(dpr, dpr);
 output.style.width = output.style.height = `${width}px`;
@@ -2333,15 +2330,17 @@ function render() {
             context.fill();
             if (index === 0) {
                 const background = typeof backgroundColor == 'string' ? backgroundColor : chooseColor(backgroundColor);
+                let contrastedColor = '#fff';
+                let distance1 = 70;
                 try {
                     const bgColor = color(background);
-                    const distance1 = distance(defaultTextColor, bgColor);
-                    const contrastedColor = bgColor.textColor();
-                    document.documentElement.style.setProperty('--text-color', distance1 < 70 ? '#fff' : defaultTextColor);
-                    document.documentElement.style.setProperty('--input-color', contrastedColor);
-                    document.documentElement.style.setProperty('--background', background);
+                    distance1 = distance(defaultTextColor, bgColor);
+                    contrastedColor = bgColor.textColor();
                 } catch (error) {
                 }
+                document.documentElement.style.setProperty('--text-color', distance1 < 70 ? contrastedColor : defaultTextColor);
+                document.documentElement.style.setProperty('--input-color', contrastedColor);
+                document.documentElement.style.setProperty('--background', background);
             }
             index++;
         }

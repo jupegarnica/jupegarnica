@@ -19,7 +19,7 @@ export default {
   "you can represent a color\nas a number or string\n": "[tan(t), 55, '#0cf']",
   "as string\nany valid css string works": "[1, 'hsl(200,100%,50%)']",
   "as number there are 256 color\na 0 to 255 rainbow palette": "[1, i]",
-  "have fun": "[\n1,\n'#fc0',\n`hsl(${100+10*sin(t)},100%,50%)`,\n16*t\n]",
+  "have fun": "[\n1,\n'#fc0',\n`hsl(${100+10*sin(t)},100%,50%)`,\n`linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)`\n]",
 
   "more examples ...": "sin(y/8 + t)",
   "simple triangle": "y - x",
