@@ -15,7 +15,7 @@ const __default = {
     "the third one\nis  for negative values": "[sin(t), 192, 'cyan']",
     "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'white'\n]",
     "you can represent a color\nas a number or string\n": "[tan(t), 55, '#0cf']",
-    "as string any valid css color\n works, even gradients": "[1, 'hsl(200,100%,50%)']",
+    "as string any valid\n css color works": "[1, 'hsl(200,100%,50%)']",
     "as number there are 256 colors\na 0 to 255 rainbow palette": "[1, i]",
     "have fun!": "[\nt-x-y,,,\n`linear-gradient(${sin(t/3)*360}deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)`]",
     "more examples ...": "sin(y/8 + t)",
