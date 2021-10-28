@@ -18,21 +18,16 @@ const defaultTextColor = '#f24';
 
 let callback = function () {};
 let startTime = null;
-// let code = `[
-//   x - y % t ,
-//   'black',
-//   '#da0',
-//   t*16
-// ]`;
+let code = `[
+  x - y % t ,
+  'black',
+   i,
+  'white'
+]`;
 
 
-let code =`[
-  -1,
-  '#fc0',
-  'hsl(145,100%,50%)',
-  'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)',
-  ]
-`;
+// let code ="[\n16+x-y-t,\n'black',\ni,\n`linear-gradient(${sin(t/3)*360}deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)`,\n ]";
+
 output.width = output.height = width * dpr;
 context.scale(dpr, dpr);
 output.style.width = output.style.height = `${width}px`;
@@ -173,7 +168,7 @@ function render() {
             ? backgroundColor
             : chooseColor(backgroundColor);
         let contrastedColor = '#fff';
-        let distance = 70;
+        let distance = 60;
         try {
           const bgColor = chroma.color(background);
           distance = chroma.distance(
@@ -182,12 +177,10 @@ function render() {
           );
           contrastedColor = bgColor.textColor();
 
-        } catch (error) {
-
-        }
+        } catch (_) {}
         document.documentElement.style.setProperty(
           '--text-color',
-          distance < 70 ? contrastedColor : defaultTextColor,
+          distance < 70 ? '#000' : defaultTextColor,
         );
         document.documentElement.style.setProperty(
           '--input-color',
