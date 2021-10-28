@@ -1,12 +1,5 @@
 export default {
-  "if it returns an array,\n the first value is the radius": "[.3, 'purple']",
-  "the second one\nis the color for positive values": "[.6, 255]",
-  "the third one\nis  for negative values": "[sin(t), 192, 'cyan']",
-  "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'white'\n]",
-  "you can represent a color\nas a number or string\n": "[tan(t), 55, '#0cf']",
-  "as string any valid css color\n works, even gradients": "[1, 'hsl(200,100%,50%)']",
-  "as number there are 256 colors\na 0 to 255 rainbow palette": "[1, i]",
-  "have fun!": "[\nt-x-y,,,\n`linear-gradient(${sin(t/3)*360}deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)`]",
+
 
   "for every dot return 0 or 1 \nto change the visibility": "Math.random() < 0.1",
   "use a float between 0 and 1\n to define the size": "Math.random()",
@@ -20,7 +13,14 @@ export default {
   "create patterns using \ndifferent color": "[1, 0, -1][i%3]",
   "skip `Math.` to use methods \nand props like `sin` or `PI`": "sin(t-sqrt((x-7.5)**2+(y-6)**2))",
 
-
+  "if it returns an array,\n the first value is the radius": "[.3, 'purple']",
+  "the second one\nis the color for positive values": "[.6, 255]",
+  "the third one\nis  for negative values": "[sin(t), 192, 'cyan']",
+  "the fourth one\nis the background": "[\nsin(t),\n'#fc0',\n'rgba(255,255,55)',\n'white'\n]",
+  "you can represent a color\nas a number or string\n": "[tan(t), 55, '#0cf']",
+  "as string any valid css color\n works, even gradients": "[1, 'hsl(200,100%,50%)']",
+  "as number there are 256 colors\na 0 to 255 rainbow palette": "[1, i]",
+  "have fun!": "[\nt-x-y,,,\n`linear-gradient(${sin(t/3)*360}deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)`]",
 
   "more examples ...": "sin(y/8 + t)",
   "simple triangle": "y - x",
