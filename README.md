@@ -3,12 +3,12 @@
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=15)
 
-- 🔭 I’m currently working on geekshubs.com
+- 🔭 I’m currently working on [geekshubs.com](https://geekshubs.com)
 
 ## Get in touch
-- web Page: https://garn.dev
-- Twitter: https://twitter.com/jupegarnica
-- LinkedIn: https://www.linkedin.com/in/jupegarnica
+-  [garn.dev](https://garn.dev)
+-  [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
+-  [linkedin.com/in/jupegarnica](https://www.linkedin.com/in/jupegarnica)
 
 
 
