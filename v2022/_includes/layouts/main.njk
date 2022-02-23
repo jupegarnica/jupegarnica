@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en"
+    data-theme="dark">
+    <!-- <html lang="en"
+    data-theme="light"> -->
+
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+    </head>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+    <!-- <link rel="stylesheet"
+        href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"> -->
+    <link rel="stylesheet"
+        href="/css/pico.classless.min.css"
+        inline>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Newsreader:ital@1&display=swap"
+        rel="stylesheet"
+        inline>
+    <style>
+        html {
+            font-family: 'Inter', var(--font-family);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Inter', var(--font-family);
+            font-size: calc(0.8 * var(--font-size));
+
+        }
+
+        code,
+        kbd {
+            display: inline-block;
+            color: white;
+            font-size: 0.95em;
+            padding: 0.375rem 0.5rem;
+        }
+
+        em {
+            font-family: 'Newsreader', var(--font-family);
+            font-size: 1.25em;
+            font-style: italic;
+        }
+        strong {
+            color: white;
+        }
+    </style>
+
+    <body>
+        <main>
+            {{ content | safe }}
+        </main>
+    </body>
+
+</html>

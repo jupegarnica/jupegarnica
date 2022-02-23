@@ -1,0 +1,4 @@
+scripts:
+  dev: lume --serve --dev --open --watch
+  start: deno run --allow-read=_site _serve.ts
+  # start: lume --serve
