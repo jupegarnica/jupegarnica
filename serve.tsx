@@ -1,12 +1,14 @@
 /** @jsx h */
 import {
   h,
+  json,
   jsx,
   serve,
   serveStatic,
 } from "https://deno.land/x/sift@0.4.3/mod.ts";
 import { join } from "https://deno.land/std@0.126.0/path/mod.ts";
 import { Ip } from "./ip/myIp.jsx";
+import { resolveDns } from "./dns/resolveDns.js";
 
 const NotFound = () => (
   <div>
@@ -17,14 +19,13 @@ const NotFound = () => (
 serve({
   "/": (req) => Response.redirect(new URL("/home", req.url), 302),
   // '/home': () => jsx(<Home/>),
-  "/home/:filename+": serveStatic("home-spa/dist/build", { baseUrl: import.meta.url }),
+  "/home/:filename+": serveStatic("home-spa/dist/build", {
+    baseUrl: import.meta.url,
+  }),
   "/screen/:filename+": serveStatic("screen", { baseUrl: import.meta.url }),
   "/old/:filename+": serveStatic("old", { baseUrl: import.meta.url }),
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
-  // "/blog/:slug": (request, params) => {
-  //   const post = `Hello, you visited ${params?.slug}!`;
-  //   return new Response(post);
-  // },
+  "/dns/:slug": async (req, params) => json(await resolveDns(params?.slug)),
   "/ip": (request) => jsx(<Ip ip={request.headers.get("x-forwarded-for")} />),
   404: (req) => {
     if (req.url.endsWith("index.html")) {
