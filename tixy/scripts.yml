@@ -1,0 +1,6 @@
+scripts:
+  bundle-tixy: deno bundle --watch tixy/index.js tixy/bundle.js
+  tixy:
+    pll:
+      - vr dev
+      - vr bundle-tixy
