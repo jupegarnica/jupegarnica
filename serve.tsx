@@ -5,6 +5,7 @@ import {
   serve,
   serveStatic,
 } from "https://deno.land/x/sift@0.4.3/mod.ts";
+import { join } from "https://deno.land/std@0.126.0/path/mod.ts";
 import { Ip } from "./ip/myIp.jsx";
 
 const NotFound = () => (
@@ -27,7 +28,7 @@ serve({
   // },
   "/ip": (request) => {
     const ip = request.headers.get("x-forwarded-for");
-    console.log(request.headers);
+    // console.log(request.headers);
 
     return jsx(<Ip ip={ip} />);
   },
@@ -35,7 +36,9 @@ serve({
     if (req.url.endsWith("index.html")) {
       return new Response("Not found", { status: 404 });
     }
-    const nextUrl = new URL("./index.html", req.url + "/");
+
+    const nextUrl = new URL(join(req.url, "./index.html"));
+
     return Response.redirect(nextUrl, 302);
   },
 });
