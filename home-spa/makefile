@@ -2,7 +2,7 @@ run:
 	 deno-create-react-app run --watch --port 8000
 
 build:
-	deno-create-react-app build && ./build.sh ../home
+	deno-create-react-app build dist
 
 
 install:

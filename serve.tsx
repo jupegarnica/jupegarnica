@@ -7,19 +7,18 @@ import {
 } from "https://deno.land/x/sift@0.4.3/mod.ts";
 import { join } from "https://deno.land/std@0.126.0/path/mod.ts";
 import { Ip } from "./ip/myIp.jsx";
-import {App as Home} from "./_home/App.jsx";
 
-// const NotFound = () => (
-//   <div>
-//     <h1>Page not found</h1>
-//   </div>
-// );
+const NotFound = () => (
+  <div>
+    <h1>Page not found</h1>
+  </div>
+);
 
 serve({
   "/": (req) => Response.redirect(new URL("/home", req.url), 302),
-  '/home': () => jsx(<Home/>),
+  // '/home': () => jsx(<Home/>),
+  "/home/:filename+": serveStatic("home-spa/dist/build", { baseUrl: import.meta.url }),
   "/screen/:filename+": serveStatic("screen", { baseUrl: import.meta.url }),
-  // "/home/:filename+": serveStatic("home", { baseUrl: import.meta.url }),
   "/old/:filename+": serveStatic("old", { baseUrl: import.meta.url }),
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
   // "/blog/:slug": (request, params) => {
