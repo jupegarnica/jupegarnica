@@ -1,6 +1,7 @@
 import {React} from './deps.ts';
 import Typist from 'https://esm.sh/react-typist';
 import Hand from './components/hand.tsx';
+
 function delayGenerator(mean:any, std:any, {line, lineIdx, charIdx, defDelayGenerator}:any):number {
   if (charIdx === line.length - 1) {
     return 500;
