@@ -34,7 +34,7 @@ const Main = ({ children }) => (
 export function Ip({ ip }) {
   return (
     <Main>
-      <h1>{ip || 'unknown ip'}</h1>
+      <h1>{ip || "unknown ip"}</h1>
     </Main>
   );
 }

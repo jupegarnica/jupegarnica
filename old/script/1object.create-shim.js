@@ -3,22 +3,22 @@
  */
 
 if (typeof Object.create !== "function") {
-    Object.create = function (object, properties) {
-        "use strict";
+  Object.create = function (object, properties) {
+    "use strict";
 
-        var property;
+    var property;
 
-        function O() {}
+    function O() {}
 
-        O.prototype = object;
+    O.prototype = object;
 
-        if (properties !== undefined) {
-            for (property in properties) {
-                if (properties.hasOwnProperty(property)) {
-                    O[property] = properties[property].value;
-                }
-            }
+    if (properties !== undefined) {
+      for (property in properties) {
+        if (properties.hasOwnProperty(property)) {
+          O[property] = properties[property].value;
         }
-        return new O();
-    };
+      }
+    }
+    return new O();
+  };
 }
