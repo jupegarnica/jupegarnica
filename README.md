@@ -54,7 +54,8 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 | ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)|![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=35&theme=dark&bg_color=11191f&border_color=555) |
 |![garn's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@jupegarnica&theme=dark&bg_color=11191f&border_color=555) | |
  -->
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=jupegarnica)](https://github.com/jupegarnica/jupegarnica)
+<!--
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=jupegarnica)](https://github.com/jupegarnica/jupegarnica) -->
 
 
 ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)
