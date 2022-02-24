@@ -6,33 +6,41 @@ import inline from "https:/deno.land/x/lume@v1.6.0/plugins/inline.ts";
 import jsx from "https:/deno.land/x/lume@v1.6.0/plugins/jsx.ts";
 import modify_urls from "https:/deno.land/x/lume@v1.6.0/plugins/modify_urls.ts";
 
+// todo: fix version
+import { copy } from 'https://deno.land/std@0.126.0/fs/copy.ts';
+
+
+await copy("./index.md", "../README.md", { overwrite: true });
+
+
+
 const site = lume({
 
 }
-    // {
-    // cwd: Deno.cwd(),
-    // src: ".",
-    // dest: "_site",
-    // location: new URL("http://localhost:3000"),
-    // dev: false
-    // prettyUrls: true,
-    // server: {
-    //   port: 3000,
-    //   page404: "/404.html",
-    //   open: false,
-    // },
-    // watcher: {
-    //   debounce: 100,
-    //   ignore: []
-    // },
-    // components: {
-    //   directory: "/_components",
-    //   variable: "comp",
-    //   cssFile: "/components.css",
-    //   jsFile: "/components.js",
-    // },
-//   }
-  );
+  // {
+  // cwd: Deno.cwd(),
+  // src: ".",
+  // dest: "_site",
+  // location: new URL("http://localhost:3000"),
+  // dev: false
+  // prettyUrls: true,
+  // server: {
+  //   port: 3000,
+  //   page404: "/404.html",
+  //   open: false,
+  // },
+  // watcher: {
+  //   debounce: 100,
+  //   ignore: []
+  // },
+  // components: {
+  //   directory: "/_components",
+  //   variable: "comp",
+  //   cssFile: "/components.css",
+  //   jsFile: "/components.js",
+  // },
+  //   }
+);
 
 site.use(base_path());
 site.use(code_highlight());

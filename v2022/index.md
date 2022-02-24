@@ -1,6 +1,6 @@
 ---
 layout: layouts/main.njk
-title: garn's profile
+title: Garn.dev
 ---
 
 # Hello world
@@ -27,18 +27,18 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 | ---------- | -------------------------------------- |
 | UI         | `React, nextJs, PWA`                   |
 | Data       | `Redux`                                |
-| Testing    | `jest , puppetter, cypress, Deno.test` |
+| Testing    | `jest , puppeteer, cypress, Deno.test` |
 | Api Rest   | `oak , express, laravel`               |
 | JS Runtime | `Deno`                                 |
 | CI/CD      | `github actions`                       |
-| Database   | `postgress, mysql`                     |
+| Database   | `postgres, mysql`                     |
 | SO         | `linux, ubuntu`                        |
 | VPS cloud  | `AWS, Digital Ocean`                   |
 
 ## Public projects
 
-- **1996** (HTML, CSS): My first project was at 1996, using frontpage, develop a
-  art website for my father.
+- **1996** (HTML, CSS): My first project was at 1996, using microsoft frontpage, develop an
+  art exposition website for my father.
 
 ## Writings
 
@@ -71,4 +71,5 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 
 - [garn.dev](https://garn.dev)
 - [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
+- [github.com/jupegarnica](https://github.com/jupegarnica)
 - [linkedin.com/in/jupegarnica](https://www.linkedin.com/in/jupegarnica)

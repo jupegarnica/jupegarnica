@@ -17,10 +17,11 @@ const NotFound = () => (
 );
 
 serve({
-  "/": (req) => Response.redirect(new URL("/v2020", req.url), 302),
+  "/": (req) => Response.redirect(new URL("/v2022", req.url), 302),
   "/v2020/:filename+": serveStatic("v2020/dist/build", {
     baseUrl: import.meta.url,
   }),
+  "/v2022/:filename+": serveStatic("v2022/_site", { baseUrl: import.meta.url }),
   "/screen/:filename+": serveStatic("screen", { baseUrl: import.meta.url }),
   "/v2018/:filename+": serveStatic("v2018", { baseUrl: import.meta.url }),
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
