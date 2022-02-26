@@ -82,7 +82,7 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 
 </div>
 
-## Some interesting public projects
+## Some open source projects
 
 
 <div class="projects grid-responsive">
