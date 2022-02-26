@@ -1,11 +1,7 @@
----
-layout: layouts/main.njk
-title: Garn.dev
----
-
 # Hello world
 
 Here it is _Garn_, a **web developer** from _Valencia_ in love with minimalism.
+
 
 ## Tech stack
 
@@ -31,11 +27,11 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 | Api Rest   | `oak , express, laravel`               |
 | JS Runtime | `Deno`                                 |
 | CI/CD      | `github actions`                       |
-| Database   | `postgres, mysql`                     |
+| Database   | `postgres, mysql`                      |
 | SO         | `linux, ubuntu`                        |
 | VPS cloud  | `AWS, Digital Ocean`                   |
 
-## Public projects
+<!-- ## Public projects
 
 - **1996** (HTML, CSS): My first project was at 1996, using microsoft frontpage, develop an
   art exposition website for my father.
@@ -46,20 +42,39 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 
 ## Photography
 
-## Github Stats
+## Github Stats -->
 
 <!--
-| | | |
-|-- |-- |-- |
-| ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)|![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=35&theme=dark&bg_color=11191f&border_color=555) |
-|![garn's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@jupegarnica&theme=dark&bg_color=11191f&border_color=555) | |
+|                                                                                                                                                                    |                                                                                                                                                                              |     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555) | ![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=35&theme=dark&bg_color=11191f&border_color=555) |
+| ![garn's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@jupegarnica&theme=dark&bg_color=11191f&border_color=555)                    |                                                                                                                                                                              |
  -->
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=jupegarnica)](https://github.com/jupegarnica/jupegarnica)
+<!-- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=jupegarnica)](https://github.com/jupegarnica/jupegarnica) -->
 
+<style>
+  .stats {
+    display:flex;
+    flex-wrap:wrap;
+    align-items: stretch;
+    /* flex-direction: column; */
+  }
+  .stats img {
+    padding: 0 1em;
+    /* height: 100%; */
+    /* width: 100%; */
+  }
+
+</style>
+<div class="stats">
 
 ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)
-![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=35&theme=dark&bg_color=11191f&border_color=555)
-![latest weekly stats](https://github-readme-stats.vercel.app/api/wakatime?username=jupegarnica&theme=dark&bg_color=11191f&border_color=555&custom_title=latest%20week%20stats&layout=compact&langs_count=20)
+
+![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=10&theme=dark&bg_color=11191f&border_color=555)
+
+![latest weekly stats](https://github-readme-stats.vercel.app/api/wakatime?username=jupegarnica&theme=dark&bg_color=11191f&border_color=555&custom_title=latest%20week%20stats&layout=compact&langs_count=10)
+
+</div>
 <!--
 [![wakatime](https://wakatime.com/badge/user/6acd2f00-f849-4fe9-8df5-509278e123c6.svg?style=flat)](https://wakatime.com/@6acd2f00-f849-4fe9-8df5-509278e123c6) -->
 
