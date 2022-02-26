@@ -67,7 +67,8 @@ I learned coding at university studing Engineering at UPV. We used to develop in
     }
 
 
-</style>
+</style>ç
+
 <div class="stats grid-responsive">
 
 
