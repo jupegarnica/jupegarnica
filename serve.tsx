@@ -24,6 +24,7 @@ serve({
   "/v2020/:filename+": serveStatic("v2020/dist/build", {
     baseUrl: import.meta.url,
   }),
+
   "/v2022/:filename+": serveStatic("v2022/_site", { baseUrl: import.meta.url }),
   "/screen/:filename+": serveStatic("screen", { baseUrl: import.meta.url }),
   "/v2018/:filename+": serveStatic("v2018", { baseUrl: import.meta.url }),
