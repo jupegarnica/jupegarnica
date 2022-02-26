@@ -54,20 +54,6 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 
 ## Coding stats
 
-<style>
-
-   .grid-responsive {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(var(--cell-width, 400px), 1fr));
-        grid-gap: 1rem;
-        align-items: center;
-    }
-    .projects {
-      --cell-width:  300px;
-    }
-
-
-</style>ç
 
 <div class="stats grid-responsive">
 
