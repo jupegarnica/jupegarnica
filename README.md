@@ -51,6 +51,10 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 | ![garn's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@jupegarnica&theme=dark&bg_color=11191f&border_color=555)                    |                                                                                                                                                                              |
  -->
 
+## What I do for a living
+
+I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
+
 
 ## Coding stats
 
@@ -68,7 +72,10 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 
 </div>
 
-## Some open source projects
+# Coding projects
+
+
+## Open source libraries
 
 
 <div class="projects grid-responsive">
@@ -95,12 +102,19 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 <!--
 [![wakatime](https://wakatime.com/badge/user/6acd2f00-f849-4fe9-8df5-509278e123c6.svg?style=flat)](https://wakatime.com/@6acd2f00-f849-4fe9-8df5-509278e123c6) -->
 
+## Web apps
 
-## What I do for a living
+- [what's my ip](https://garn.dev/ip)
+- [what's my screen resolution](https://garn.dev/screen)
+- [dns resolver](https://garn.dev/dns/gar.dev)
 
-I’m currently working as **lead developer** at [geekshubs.com](https://geekshubs.com)
+## Personal website previous versions
 
-## Get in touch
+- [v2018](https://garn.dev/v2018)
+- [v2020](https://garn.dev/v2020)
+- [v2022](https://garn.dev/v2022)
+
+# Get in touch
 
 - [juan@garn.dev](mailto:juan@garn.dev)
 - [garn.dev](https://garn.dev)
