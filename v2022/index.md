@@ -50,40 +50,72 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 | ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555) | ![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=35&theme=dark&bg_color=11191f&border_color=555) |
 | ![garn's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@jupegarnica&theme=dark&bg_color=11191f&border_color=555)                    |                                                                                                                                                                              |
  -->
-<!-- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=jupegarnica)](https://github.com/jupegarnica/jupegarnica) -->
+
+
+## Coding stats
 
 <style>
-  .stats {
-    display:flex;
-    flex-wrap:wrap;
-    align-items: stretch;
-    /* flex-direction: column; */
-  }
-  .stats img {
-    padding: 0 1em;
-    /* height: 100%; */
-    /* width: 100%; */
-  }
+
+   .grid-responsive {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(var(--cell-width, 400px), 1fr));
+        grid-gap: 1rem;
+        align-items: center;
+    }
+    .projects {
+      --cell-width:  300px;
+    }
+
 
 </style>
-<div class="stats">
+<div class="stats grid-responsive">
 
-![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)
+
+![latest weekly stats](https://github-readme-stats.vercel.app/api/wakatime?username=jupegarnica&theme=dark&bg_color=11191f&border_color=555&custom_title=Latest%20week%20stats&layout=compact&langs_count=10)
+
 
 ![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=10&theme=dark&bg_color=11191f&border_color=555)
 
-![latest weekly stats](https://github-readme-stats.vercel.app/api/wakatime?username=jupegarnica&theme=dark&bg_color=11191f&border_color=555&custom_title=latest%20week%20stats&layout=compact&langs_count=10)
+
+![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)
+
+</div>
+
+## Some interesting public projects
+
+
+<div class="projects grid-responsive">
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=mock-api&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/mock-api)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-validator&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-validator)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-exec&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-exec)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-yaml&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-yaml)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-monitoring&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-monitoring)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=rules-store&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/rules-store)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=asdfasdf.js&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/asdfasdf.js)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-static&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-static)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=spyObject&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/spyObject)
 
 </div>
 <!--
 [![wakatime](https://wakatime.com/badge/user/6acd2f00-f849-4fe9-8df5-509278e123c6.svg?style=flat)](https://wakatime.com/@6acd2f00-f849-4fe9-8df5-509278e123c6) -->
 
 
+## What I do for a living
 
-- 🔭 I’m currently working on [geekshubs.com](https://geekshubs.com)
+I’m currently working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 ## Get in touch
 
+- [juan@garn.dev](mailto:juan@garn.dev)
 - [garn.dev](https://garn.dev)
 - [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
 - [github.com/jupegarnica](https://github.com/jupegarnica)

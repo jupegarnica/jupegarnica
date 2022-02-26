@@ -1,1 +1,1 @@
-export const layout = 'layout/main.njk';
+export const layout = 'layouts/main.njk';

@@ -1,10 +1,10 @@
-import lume from "https:/deno.land/x/lume@v1.6.0/mod.ts";
-import base_path from "https:/deno.land/x/lume@v1.6.0/plugins/base_path.ts";
-import code_highlight from "https:/deno.land/x/lume@v1.6.0/plugins/code_highlight.ts";
-import date from "https:/deno.land/x/lume@v1.6.0/plugins/date.ts";
-import inline from "https:/deno.land/x/lume@v1.6.0/plugins/inline.ts";
-import jsx from "https:/deno.land/x/lume@v1.6.0/plugins/jsx.ts";
-import modify_urls from "https:/deno.land/x/lume@v1.6.0/plugins/modify_urls.ts";
+import lume from "https:/deno.land/x/lume@v1.6.2/mod.ts";
+import base_path from "https:/deno.land/x/lume@v1.6.2/plugins/base_path.ts";
+import code_highlight from "https:/deno.land/x/lume@v1.6.2/plugins/code_highlight.ts";
+import date from "https:/deno.land/x/lume@v1.6.2/plugins/date.ts";
+import inline from "https:/deno.land/x/lume@v1.6.2/plugins/inline.ts";
+import jsx from "https:/deno.land/x/lume@v1.6.2/plugins/jsx.ts";
+import modify_urls from "https:/deno.land/x/lume@v1.6.2/plugins/modify_urls.ts";
 
 // todo: fix version
 import { copy } from 'https://deno.land/std@0.126.0/fs/copy.ts';
@@ -14,9 +14,7 @@ await copy("./index.md", "../README.md", { overwrite: true });
 
 
 
-const site = lume({
-
-}
+const site = lume(
   // {
   // cwd: Deno.cwd(),
   // src: ".",
