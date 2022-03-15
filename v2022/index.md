@@ -47,8 +47,8 @@ I learned coding at university studing Engineering at UPV. We used to develop in
 <!--
 |                                                                                                                                                                    |                                                                                                                                                                              |     |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555) | ![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=35&theme=dark&bg_color=11191f&border_color=555) |
-| ![garn's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@jupegarnica&theme=dark&bg_color=11191f&border_color=555)                    |                                                                                                                                                                              |
+| ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555) | ![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=35&theme=dark&bg_color=11191f33&border_color=55555555) |
+| ![garn's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@jupegarnica&theme=dark&bg_color=11191f33&border_color=55555555)                    |                                                                                                                                                                              |
  -->
 
 ## What I do for a living
@@ -61,14 +61,13 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 <div class="stats grid-responsive">
 
-
-![latest weekly stats](https://github-readme-stats.vercel.app/api/wakatime?username=jupegarnica&theme=dark&bg_color=11191f&border_color=555&custom_title=Latest%20week%20stats&layout=compact&langs_count=10)
-
-
-![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=10&theme=dark&bg_color=11191f&border_color=555)
+![latest weekly stats](https://github-readme-stats.vercel.app/api/wakatime?username=jupegarnica&theme=dark&bg_color=11191f22&border_color=55555555&custom_title=Latest%20week%20stats&layout=compact&langs_count=10)
 
 
-![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)
+![garn's github langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jupegarnica&layout=compact&langs_count=10&theme=dark&bg_color=11191f33&border_color=55555555)
+
+
+![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)
 
 </div>
 
@@ -80,23 +79,23 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 <div class="projects grid-responsive">
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=mock-api&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/mock-api)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=mock-api&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/mock-api)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-validator&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-validator)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-validator&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/garn-validator)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-exec&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-exec)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-exec&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/garn-exec)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-yaml&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-yaml)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-yaml&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/garn-yaml)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-monitoring&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-monitoring)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-monitoring&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/garn-monitoring)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=rules-store&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/rules-store)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=rules-store&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/rules-store)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=asdfasdf.js&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/asdfasdf.js)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=asdfasdf.js&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/asdfasdf.js)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-static&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/garn-static)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=garn-static&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/garn-static)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=spyObject&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f&border_color=555)](https://github.com/jupegarnica/spyObject)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=spyObject&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/spyObject)
 
 </div>
 <!--
