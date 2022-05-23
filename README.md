@@ -5,7 +5,7 @@ Here it is _Garn_, a **web developer** from _Valencia_ in love with minimalism.
 
 ## Tech stack
 
-I am deeply convinced that web standards are the future of web development. So I
+I am deeply convinced that web standards are the future of development. So I
 am totally focused on it: `html`, `css`, `PWA progressive web apps` `javascript`
 and of course `typescript` 💛. Lately I am very interested in `webAssembly` ,
 `webGL` and `webGPU`, and all it brings to the table. I used to be into
