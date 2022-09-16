@@ -22,5 +22,8 @@
   "peacock.color": "#eb5fc6",
   "deno.enable": true,
   "deno.lint": true,
-  "deno.unstable": true
+  "deno.unstable": true,
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///home/juan/dev/jupegarnica/.github/actions/deploy.yml"
+  }
 }

@@ -5,7 +5,7 @@ import {
   jsx,
   serve,
   serveStatic,
-} from "https://deno.land/x/sift@0.6.0/mod.ts";
+} from "sift";
 
 import { join } from "https://deno.land/std@0.126.0/path/mod.ts";
 import { Ip } from "./ip/myIp.jsx";
