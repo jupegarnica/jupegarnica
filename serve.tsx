@@ -30,15 +30,15 @@ serve({
   "/screen/:filename+": serveStatic("screen", { baseUrl: import.meta.url }),
   "/v2018/:filename+": serveStatic("v2018", { baseUrl: import.meta.url }),
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
-  "/dns/:slug": async (_, params) =>
+  "/dns/:slug": async (_, connInfo, params) =>
     jsx(<Dns records={await resolveDns(params?.slug)} />),
-  "/ip": (request, connInfo, params)  => {  
+  "/ip": (_: Resquest, connInfo )  => {
     const addr = connInfo.remoteAddr as Deno.NetAddr;
     const ip = addr.hostname;
     return jsx(<Ip ip={ip} />)
   },
 
-  404: (req) => {
+  404: (req:Request) => {
     if (req.url.endsWith("index.html")) {
       return new Response(render(<NotFound />), { status: 404 });
     }
