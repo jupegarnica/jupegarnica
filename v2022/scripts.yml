@@ -3,6 +3,7 @@ scripts:
   start: deno run --allow-read=_site _serve.ts
   lume: deno run -A --unstable ../lume/cli.ts
   install: deno run -A https://deno.land/x/lume/install.ts
+  build: deno run -A https://deno.land/x/lume/ci.ts
   # debug:
   #   cmd: vr lume --serve --dev --open --watch
   #   inspect: 127.0.0.1:9229
