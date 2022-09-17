@@ -101,8 +101,9 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 <!--
 [![wakatime](https://wakatime.com/badge/user/6acd2f00-f849-4fe9-8df5-509278e123c6.svg?style=flat)](https://wakatime.com/@6acd2f00-f849-4fe9-8df5-509278e123c6) -->
 
-## Web apps
+## Personal Fun Projects
 
+- [colorful tixy](https://garn.dev/tixy)
 - [what's my ip](https://garn.dev/ip)
 - [what's my screen resolution](https://garn.dev/screen)
 - [dns resolver](https://garn.dev/dns/gar.dev)
