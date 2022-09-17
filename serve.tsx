@@ -29,7 +29,7 @@ serve({
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
   "/dns/:slug": async (_, connInfo, params) =>
     jsx(<Dns records={await resolveDns(params?.slug)} />),
-  "/ip": (_: Resquest, connInfo) => {
+  "/ip": (_: Request, connInfo) => {
     const addr = connInfo.remoteAddr as Deno.NetAddr;
     const ip = addr.hostname;
     return jsx(<Ip ip={ip} />);
