@@ -1,7 +1,6 @@
 /** @jsx h */
 import {
   h,
-  json,
   jsx,
   serve,
   serveStatic,
@@ -18,7 +17,7 @@ const NotFound = () => (
 );
 
 serve({
-  "/": (req) => Response.redirect(new URL("/v2022", req.url), 302),
+  "/": (req: Request) => Response.redirect(new URL("/v2022", req.url), 302),
   "/v2020/:filename+": serveStatic("v2020/dist/build", {
     baseUrl: import.meta.url,
   }),
@@ -29,7 +28,7 @@ serve({
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
   "/dns/:slug": async (_, connInfo, params) =>
     jsx(<Dns records={await resolveDns(params?.slug)} />),
-  "/ip": (_: Resquest, connInfo) => {
+  "/ip": (_: Request, connInfo) => {
     const addr = connInfo.remoteAddr as Deno.NetAddr;
     const ip = addr.hostname;
     return jsx(<Ip ip={ip} />);

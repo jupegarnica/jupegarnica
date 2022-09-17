@@ -17,13 +17,13 @@
     "titleBar.activeForeground": "#15202b",
     "titleBar.inactiveBackground": "#eb5fc699",
     "titleBar.inactiveForeground": "#15202b99",
-    "commandCenter.border": "#15202b99"
+    "commandCenter.border": "#15202b99",
+    "statusBar.debuggingBackground": "#5feb84",
+    "statusBar.debuggingForeground": "#15202b",
+    "editorGroup.border": "#f18cd6"
   },
   "peacock.color": "#eb5fc6",
   "deno.enable": true,
   "deno.lint": true,
-  "deno.unstable": true,
-  "yaml.schemas": {
-    "https://json.schemastore.org/github-workflow.json": "file:///home/juan/dev/jupegarnica/.github/actions/deploy.yml"
-  }
+  "deno.unstable": true
 }
