@@ -5,10 +5,50 @@ const Main = ({ children }) => (
   <main>
     <style>
       {`
+      :root {
+        --glow-shadow-color: #fc06;
+      }
       body {
         margin:0
       }
+      a {
+        all: unset;
+        cursor: pointer;
+        font-size: 2em;
+        font-weight: 600;
+        color: #fffb;
+        transition: all 0.4s ease;
+      }
+      a:hover {
+        /* glow effect growing all the screen */
+        text-shadow:
+          0 0 10px var(--glow-shadow-color),
+          0 0 20px var(--glow-shadow-color),
+          0 0 30px var(--glow-shadow-color),
+          0 0 40px var(--glow-shadow-color),
+          0 0 50px var(--glow-shadow-color),
+          0 0 60px var(--glow-shadow-color),
+          0 0 70px var(--glow-shadow-color),
+          0 0 80px var(--glow-shadow-color),
+          0 0 90px var(--glow-shadow-color),
+          0 0 100px var(--glow-shadow-color),
+          0 0 110px var(--glow-shadow-color),
+          0 0 120px var(--glow-shadow-color),
+          0 0 130px var(--glow-shadow-color),
+          0 0 140px var(--glow-shadow-color),
+          0 0 150px var(--glow-shadow-color),
+          0 0 160px var(--glow-shadow-color),
+          0 0 170px var(--glow-shadow-color),
+          0 0 250px var(--glow-shadow-color),
+          0 0 300px var(--glow-shadow-color)
+          ;
 
+        text-decoration: underline;
+        text-decoration-color: #15d; ;
+        text-decoration-thickness: 0.05em;
+        text-underline-offset: 0.1em;
+        color: #444;
+      }
       main {
         background:linear-gradient(
             135deg,
@@ -32,9 +72,16 @@ const Main = ({ children }) => (
 );
 
 export function Ip({ ip }) {
+  if (!ip) {
+    return (
+      <Main>
+        <h1>Could not get your IP</h1>
+      </Main>
+    );
+  }
   return (
     <Main>
-      <h1>{ip || "unknown ip"}</h1>
+      <a href={`http://${ip}`}>{ip}</a>
     </Main>
   );
 }
