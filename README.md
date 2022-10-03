@@ -61,7 +61,6 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 <div class="stats grid-responsive">
 
-
 ![latest weekly stats](https://github-readme-stats.vercel.app/api/wakatime?username=jupegarnica&theme=dark&bg_color=11191f22&border_color=55555555&custom_title=Latest%20week%20stats&layout=compact&langs_count=10)
 
 
@@ -80,6 +79,7 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 <div class="projects grid-responsive">
 
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=prompt_object&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/prompt_object)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=loadEnv&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/loadEnv)
 
@@ -107,7 +107,7 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 ## Personal Fun Projects
 
-- [tixy colors](https://garn.dev/tixy)
+- [colorful tixy](https://garn.dev/tixy)
 - [what's my ip](https://garn.dev/ip)
 - [what's my screen resolution](https://garn.dev/screen)
 - [dns resolver](https://garn.dev/dns/gar.dev)
