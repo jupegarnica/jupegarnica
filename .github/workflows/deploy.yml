@@ -23,7 +23,7 @@ jobs:
           deno-version: v1.x
 
       - name: build lume site
-        run: cd v2022 && deno run -A https://deno.land/x/lume/ci.ts
+        run: cd v2022 && deno task build
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
