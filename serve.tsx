@@ -26,6 +26,7 @@ serve({
   "/screen/:filename+": serveStatic("screen", { baseUrl: import.meta.url }),
   "/v2018/:filename+": serveStatic("v2018", { baseUrl: import.meta.url }),
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
+  "/game-of-life/:filename+": serveStatic("game-of-life/dist", { baseUrl: import.meta.url }),
   "/dns/:slug": async (_, connInfo, params) =>
     jsx(<Dns records={await resolveDns(params?.slug)} />),
   "/ip": (_: Request, connInfo) => {

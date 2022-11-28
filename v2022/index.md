@@ -111,6 +111,7 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 - [what's my ip](https://garn.dev/ip)
 - [what's my screen resolution](https://garn.dev/screen)
 - [dns resolver](https://garn.dev/dns/gar.dev)
+- [Game Of Life](https://garn.dev/game-of-life)
 
 ## Personal website previous versions
 
@@ -120,7 +121,7 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 # Get in touch
 
-- [juan@garn.dev](mailto:juan@garn.dev)
+- [juan@garn.dev](mailto:jupegarnica@gmail.com)
 - [garn.dev](https://garn.dev)
 - [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
 - [github.com/jupegarnica](https://github.com/jupegarnica)
