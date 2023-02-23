@@ -21,10 +21,10 @@
 
     <linearGradient inkscape:collect="always"
       id="linearGradient19915">
-      <stop style="stop-color:#323;stop-opacity:1;"
+      <stop style="stop-color:#212;stop-opacity:1;"
         offset="0"
         id="stop19911" />
-      <stop style="stop-color:#303;stop-opacity:0;"
+      <stop style="stop-color:#202;stop-opacity:0;"
         offset="1"
         id="stop19913" />
     </linearGradient>
@@ -53,7 +53,7 @@
     id="layer5"
     inkscape:label="Fondo 1">
     <rect
-      style="display:inline;mix-blend-mode:normal;fill:#333;fill-opacity:0.82893664;fill-rule:evenodd;stroke:none"
+      style="display:inline;mix-blend-mode:normal;fill:#000;fill-opacity:0.82893664;fill-rule:evenodd;stroke:none"
       id="rect22005"
       width="301.11249"
       height="301.42642"
