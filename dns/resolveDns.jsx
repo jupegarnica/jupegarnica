@@ -1,18 +1,19 @@
 /** @jsx h */
-import { h } from "sift";
+import { h } from "https://deno.land/x/sift@0.6.0/mod.ts";
 
 const types = [
   `A`,
   `AAAA`,
+  `CNAME`,
+  `TXT`,
+  `MX`,
   // `ANAME`,
   // `ANY`,
   // `AXFR`,
   // `CAA`,
-  // `CNAME`,
   // `HINFO`,
   // `HTTPS`,
   // `IXFR`,
-  // `MX`,
   // `NAPTR`,
   // `NS`,
   // `NULL`,
@@ -24,7 +25,6 @@ const types = [
   // `SSHFP`,
   // `SVCB`,
   // `TLSA`,
-  `TXT`,
   // `DNSSEC`,
   // `Unknown`,
   // `ZERO`
