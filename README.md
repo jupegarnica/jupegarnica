@@ -24,7 +24,7 @@ I am a passionate maker. I love to build things with my hands. Lately I build an
 | Layer      | Tech                      |
 | ---------- | ------------------------- |
 | Lang       | `typescript`, `tsx`       |
-| UI         | `React`,                  |
+| UI         | `React`                   |
 | Data       | `Redux`                   |
 | Testing    | `Deno.test`, `playwright` |
 | Api Rest   | `oak`, `koa`              |
