@@ -1,6 +1,6 @@
 {
     "tasks": {
-        "build": "deno run -A https://deno.land/x/lume@v1.7.1/ci.ts",
-        "dev":"lume --serve --dev --open --watch"
+        "build": "deno run -A https://deno.land/x/lume@v1.17.3/cli/build.ts",
+        "dev":"deno run -A https://deno.land/x/lume@v1.17.3/cli/build.ts --serve --dev --open --watch"
     }
 }
