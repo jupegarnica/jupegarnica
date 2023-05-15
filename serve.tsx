@@ -4,7 +4,7 @@ import {
   jsx,
   serve,
   serveStatic,
-} from "sift";
+} from "https://deno.land/x/sift@0.6.0/mod.ts";
 
 import { join } from "https://deno.land/std@0.126.0/path/mod.ts";
 import { Ip } from "./ip/myIp.jsx";
@@ -42,4 +42,6 @@ serve({
     const nextUrl = new URL(join(req.url, "./index.html"));
     return Response.redirect(nextUrl, 302);
   },
+}, {
+
 });
