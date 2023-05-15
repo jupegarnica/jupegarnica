@@ -9,11 +9,15 @@ totally focused on it: `html`, `css`, `PWA progressive web apps` `javascript`
 and of course `typescript` 💛. Lately I am very interested in `webAssembly` ,
 `webGL` and `webGPU`, and all it brings to the table. I used to be into
 `nodeJs`, but I am also loving to develop using `Deno`. I am also a big fan and
-I use daily `docker`,`docker-compose`, `react`, `angular`, `vue`, `git`,
-`github`,`bitbucket`, `php`, `laravel`
+I use daily `docker`,`docker-compose`.
 
-I learned coding at university studing Engineering at UPV. We used to develop in
-`c++` and `Visual Basic`
+Referencing frameworks, I use daily `react` with `nextJs`. `Koa` from `nodejs` (express alternative) , `prisma` and `postgres` for the database's layer.
+
+
+I learned coding at university studying Engineering at UPV at 2006. We used to develop in
+`c++` and `Visual Basic`.
+
+I am a passionate maker. I love to build things with my hands. Lately I build and fly racing drones, FPV (first person view) flying is awesome.
 
 ### Favorite stack
 
