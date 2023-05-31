@@ -114,7 +114,7 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 # Get in touch
 
-- [juan@garn.dev](mailto:jupegarnica@gmail.com)
+- [juan@garn.dev](mailto:j.u.p.e.garnica@gmail.com)
 - [garn.dev](https://garn.dev)
 - [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
 - [github.com/jupegarnica](https://github.com/jupegarnica)
