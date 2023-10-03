@@ -46,7 +46,7 @@ export async function resolveDns(hostname) {
   return result;
 }
 
-export const Dns = ({ records, domain='garn.dev' }) => {
+export const Dns = ({ records, domain }) => {
   const arr = Object.entries(records);
   return (
     <section>

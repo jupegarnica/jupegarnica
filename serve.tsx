@@ -27,8 +27,12 @@ serve({
   "/v2018/:filename+": serveStatic("v2018", { baseUrl: import.meta.url }),
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
   "/game-of-life/:filename+": serveStatic("game-of-life/dist", { baseUrl: import.meta.url }),
-  "/dns/:slug": async (_, connInfo, params) =>
-    jsx(<Dns records={await resolveDns(params?.slug)} domain={params?.slug} />),
+  "/dns/:slug": async (_, connInfo, params) => {
+
+    const domain = params?.slug ?? "garn.dev";
+
+    return jsx(<Dns records={await resolveDns(domain)} domain={domain} />);
+  },
   "/ip": (_: Request, connInfo) => {
     const addr = connInfo.remoteAddr as Deno.NetAddr;
     const ip = addr.hostname;
