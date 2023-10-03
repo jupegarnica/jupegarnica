@@ -28,7 +28,7 @@ serve({
   "/tixy/:filename+": serveStatic("tixy", { baseUrl: import.meta.url }),
   "/game-of-life/:filename+": serveStatic("game-of-life/dist", { baseUrl: import.meta.url }),
   "/dns/:slug": async (_, connInfo, params) =>
-    jsx(<Dns records={await resolveDns(params?.slug)} />),
+    jsx(<Dns records={await resolveDns(params?.slug)} domain={params?.slug} />),
   "/ip": (_: Request, connInfo) => {
     const addr = connInfo.remoteAddr as Deno.NetAddr;
     const ip = addr.hostname;

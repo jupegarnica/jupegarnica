@@ -103,7 +103,7 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 - [colorful tixy](https://garn.dev/tixy)
 - [what's my ip](https://garn.dev/ip)
 - [what's my screen resolution](https://garn.dev/screen)
-- [dns resolver](https://garn.dev/dns/gar.dev)
+- [dns resolver](https://garn.dev/dns/garn.dev)
 - [Game Of Life](https://garn.dev/game-of-life)
 
 ## Personal website previous versions
