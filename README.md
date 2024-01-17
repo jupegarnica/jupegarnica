@@ -100,10 +100,11 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 ## Personal Fun Projects
 
-- [colorful tixy](https://garn.dev/tixy)
-- [what's my ip](https://garn.dev/ip)
-- [what's my screen resolution](https://garn.dev/screen)
-- [dns resolver](https://garn.dev/dns/gar.dev)
+- [Colorful tixy](https://garn.dev/tixy)
+- [My ip](https://garn.dev/ip)
+- [Screen resolution](https://garn.dev/screen)
+- [Screen recorder](https://record.garn.dev)
+- [DNS resolver](https://garn.dev/dns/gar.dev)
 - [Game Of Life](https://garn.dev/game-of-life)
 
 ## Personal website previous versions
@@ -114,7 +115,7 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 # Get in touch
 
-- [juan@garn.dev](mailto:jupegarnica@gmail.com)
+- [juan@garn.dev](mailto:j.u.p.e.garnica@gmail.com)
 - [garn.dev](https://garn.dev)
 - [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
 - [github.com/jupegarnica](https://github.com/jupegarnica)
