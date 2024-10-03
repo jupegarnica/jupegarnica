@@ -76,6 +76,10 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 <div class="projects grid-responsive">
 
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=commit&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/commit)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=downtime&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/downtime)
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=tepi&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/tepi)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=faker&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/faker)
