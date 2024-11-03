@@ -56,7 +56,7 @@ I am a passionate maker. I love to build things with my hands. Lately I build an
 
 ## What I do for a living
 
-I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
+I am working as **developer** at [harbiz](https://harbiz.io)
 
 ## Live coding stats
 
