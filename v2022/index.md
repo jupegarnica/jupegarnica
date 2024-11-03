@@ -11,29 +11,28 @@ and of course `typescript` 💛. Lately I am very interested in `webAssembly` ,
 `nodeJs`, but I am also loving to develop using `Deno`. I am also a big fan and
 I use daily `docker`,`docker-compose`.
 
-Referencing frameworks, I use daily `react` with `nextJs`. `Koa` from `nodejs`
-(express alternative) , `prisma` and `postgres` for the database's layer.
+Referencing frameworks, I use daily `react` with `nextJs`. `Koa` from `nodejs` (express alternative) , `prisma` and `postgres` for the database's layer.
 
-I learned coding at university studying Engineering at UPV at 2006. We used to
-develop in `c++` and `Visual Basic`.
 
-I am a passionate maker. I love to build things with my hands. Lately I build
-and fly racing drones, FPV (first person view) flying is awesome.
+I learned coding at university studying Engineering at UPV at 2006. We used to develop in
+`c++` and `Visual Basic`.
+
+I am a passionate maker. I love to build things with my hands. Lately I build and fly racing drones, FPV (first person view) flying is awesome.
 
 ### Favorite stack
 
-| Layer      | Tech                             |
-| ---------- | -------------------------------- |
-| Lang       | `typescript`, `tsx`              |
-| UI         | `React`                          |
-| Data       | `Redux`                          |
-| Testing    | `Deno.test`, `playwright`        |
-| Api Rest   | `Hono`, `koa`                     |
-| JS Runtime | `Deno`                           |
-| CI/CD      | `github actions`                 |
-| Database   | `postgres`, `mongoDB`, `Deno.kv` |
-| SO         | `linux, ubuntu`                  |
-| VPS cloud  | `Digital Ocean`                  |
+| Layer      | Tech                      |
+| ---------- | ------------------------- |
+| Lang       | `typescript`, `tsx`       |
+| UI         | `React`                   |
+| Data       | `Redux`                   |
+| Testing    | `Deno.test`, `playwright` |
+| Api Rest   | `oak`, `koa`              |
+| JS Runtime | `Deno`                    |
+| CI/CD      | `github actions`          |
+| Database   | `postgres`, `mongoDB`     |
+| SO         | `linux, ubuntu`           |
+| VPS cloud  | `Digital Ocean`           |
 
 <!-- ## Public projects
 
@@ -57,7 +56,7 @@ and fly racing drones, FPV (first person view) flying is awesome.
 
 ## What I do for a living
 
-I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
+I am working as **developer** at [harbiz](https://harbiz.io)
 
 ## Live coding stats
 
@@ -77,17 +76,11 @@ I am working as **lead developer** at [geekshubs.com](https://geekshubs.com)
 
 <div class="projects grid-responsive">
 
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=commit&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/commit)
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=downtime&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/downtime)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=tepi&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/tepi)
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=noop&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/noop)
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=regular_expressions&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/regular_expressions)
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=load-env-files&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/load-env-files)
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=fetch_cli&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/fetch_cli)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jupegarnica&repo=faker&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)](https://github.com/jupegarnica/faker)
 
