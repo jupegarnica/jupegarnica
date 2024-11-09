@@ -1,32 +1,30 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#f18cd6",
     "activityBar.activeBorder": "#f5fce3",
-    "activityBar.background": "#f18cd6",
-    "activityBar.foreground": "#15202b",
-    "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#f5fce3",
+    "activityBar.activeBackground": "#7c9325",
+    "activityBar.background": "#7c9325",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#99d5e5",
     "activityBarBadge.foreground": "#15202b",
-    "sash.hoverBorder": "#f18cd6",
-    "statusBar.background": "#eb5fc6",
-    "statusBar.foreground": "#15202b",
-    "statusBarItem.hoverBackground": "#e532b6",
-    "statusBarItem.remoteBackground": "#eb5fc6",
-    "statusBarItem.remoteForeground": "#15202b",
-    "titleBar.activeBackground": "#eb5fc6",
-    "titleBar.activeForeground": "#15202b",
-    "titleBar.inactiveBackground": "#eb5fc699",
-    "titleBar.inactiveForeground": "#15202b99",
-    "commandCenter.border": "#15202b99",
-    "statusBar.debuggingBackground": "#5feb84",
-    "statusBar.debuggingForeground": "#15202b",
-    "editorGroup.border": "#f18cd6"
+    "commandCenter.border": "#e7e7e799",
+    "editorGroup.border": "#7c9325",
+    "sash.hoverBorder": "#7c9325",
+    "statusBar.background": "#5a6a1b",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#7c9325",
+    "statusBarItem.remoteBackground": "#5a6a1b",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#5a6a1b",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#5a6a1b99",
+    "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#eb5fc6",
   "deno.enable": true,
   "deno.lint": true,
   "deno.unstable": true,
   "yaml.schemas": {
     "https://json.schemastore.org/github-workflow.json": "file:///home/juan/dev/jupegarnica/.github/workflows/deploy.yml"
-  }
+  },
+  "peacock.color": "#5a6a1b"
 }
