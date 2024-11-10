@@ -104,12 +104,12 @@ I am working as **developer** at [harbiz](https://harbiz.io)
 
 ## Personal Fun Projects
 
-- [Colorful tixy](https://garn.dev/tixy)
-- [My ip](https://garn.dev/ip)
-- [Screen resolution](https://garn.dev/screen)
+- [Public ip](https://ip.garn.dev)
+- [Screen resolution](https://screen.garn.dev/)
 - [Screen recorder](https://record.garn.dev)
-- [DNS resolver](https://garn.dev/dns/gar.dev)
-- [Game Of Life](https://garn.dev/game-of-life)
+- [DNS resolver](https://dns.garn.dev/garn.dev)
+- [Colorful tixy](https://tixy/garn.dev)
+- [Game Of Life](https://game-of-life.garn.dev/)
 
 ## Personal website previous versions
 
