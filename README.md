@@ -108,7 +108,7 @@ I am working as **developer** at [harbiz](https://harbiz.io)
 - [Screen resolution](https://screen.garn.dev/)
 - [Screen recorder](https://record.garn.dev)
 - [DNS resolver](https://dns.garn.dev/garn.dev)
-- [Colorful tixy](https://tixy/garn.dev)
+- [Colorful tixy](https://tixy.garn.dev)
 - [Game Of Life](https://game-of-life.garn.dev/)
 
 ## Personal website previous versions
