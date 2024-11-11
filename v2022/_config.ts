@@ -7,10 +7,8 @@ import jsx from "lume/plugins/jsx.ts";
 import modify_urls from "lume/plugins/modify_urls.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 
-import { copy } from 'https://deno.land/std@0.126.0/fs/copy.ts';
-
-
-await copy("./index.md", "../README.md", { overwrite: true });
+// import { copy } from 'https://deno.land/std@0.126.0/fs/copy.ts';
+// await copy("./index.md", "../README.md", { overwrite: true });
 
 
 
