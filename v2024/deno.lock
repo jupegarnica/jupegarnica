@@ -50,6 +50,7 @@
     "npm:react@*": "18.3.1",
     "npm:react@18.3.1": "18.3.1",
     "npm:remark-gfm@4.0.0": "4.0.0",
+    "npm:tailwindcss@*": "3.4.14_postcss@8.4.47",
     "npm:tailwindcss@3.4.14": "3.4.14_postcss@8.4.47"
   },
   "jsr": {
@@ -2139,7 +2140,8 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:react@*"
+      "npm:react@*",
+      "npm:tailwindcss@*"
     ]
   }
 }

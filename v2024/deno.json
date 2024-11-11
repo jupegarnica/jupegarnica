@@ -2,7 +2,8 @@
   "imports": {
     "lume/": "https://deno.land/x/lume@v2.4.2/",
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.7.2/",
-    "react": "npm:react"
+    "react": "npm:react",
+    "tailwindcss": "npm:tailwindcss"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
