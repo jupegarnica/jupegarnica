@@ -1,4 +1,5 @@
-export const layout = 'layout.tsx'
+export const layout = 'layout.tsx';
+
 interface Project {
     title: string
     published: boolean
@@ -103,10 +104,10 @@ interface Project {
 
   export default function Portfolio() {
     return (
-      <div className="min-h-screen flex flex-col bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-        <header className="bg-white shadow-lg">
-          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-extrabold text-gray-900">My Portfolio</h1>
+      <div className="min-h-screen flex flex-col moving-background"> {/* Added moving-background class */}
+        <header className="bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg"> {/* Added gradient background */}
+          <div className="max-w-7xl mx-auto py-8 px-6 sm:px-8 lg:px-10"> {/* Increased padding */}
+            <h1 className="text-5xl font-extrabold text-white">My Portfolio</h1> {/* Increased font size and changed text color */}
           </div>
         </header>
 
@@ -116,28 +117,28 @@ interface Project {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
                   <div key={index} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white transform transition-transform hover:scale-105">
-                    <div className="p-6 flex-grow">
-                      <h3 className="text-2xl font-semibold mb-2 text-gray-900">{project.title}</h3>
-                      <p className="text-sm mb-4 text-gray-600">{project.description}</p>
-                      <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="p-8 flex-grow"> {/* Increased padding */}
+                      <h3 className="text-3xl font-semibold mb-4 text-gray-900">{project.title}</h3> {/* Increased font size */}
+                      <p className="text-base mb-6 text-gray-600">{project.description}</p> {/* Increased font size and margin */}
+                      <div className="flex flex-wrap gap-2 mb-6"> {/* Increased margin */}
                         {project.draft && (
-                          <span className="px-2 py-1 text-xs font-semibold rounded-full bg-gray-200 text-gray-700">
+                          <span className="px-3 py-2 text-sm font-semibold rounded-full bg-gray-200 text-gray-700">
                             Draft
                           </span>
                         )}
                         {project.published && (
-                          <span className="px-2 py-1 text-xs font-semibold rounded-full bg-blue-200 text-blue-800">
+                          <span className="px-3 py-2 text-sm font-semibold rounded-full bg-blue-200 text-blue-800">
                             Published
                           </span>
                         )}
                       </div>
                     </div>
-                    <div className="px-6 py-4 bg-gray-900">
+                    <div className="px-8 py-6 bg-gray-900"> {/* Increased padding */}
                       <a
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full text-center px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white transition duration-300 ease-in-out"
+                        className="block w-full text-center px-6 py-3 rounded-md bg-blue-500 hover:bg-blue-600 text-white transition duration-300 ease-in-out"
                       >
                         View on GitHub
                       </a>
@@ -149,9 +150,9 @@ interface Project {
           </div>
         </main>
 
-        <footer className="bg-white shadow-lg mt-8">
-          <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-            <p className="text-center text-gray-500">
+        <footer className="bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg mt-8"> {/* Added gradient background */}
+          <div className="max-w-7xl mx-auto py-6 px-6 sm:px-8 lg:px-10"> {/* Increased padding */}
+            <p className="text-center text-white">
               © 2023 Your Name. All rights reserved.
             </p>
           </div>

@@ -25,9 +25,25 @@
   */
  @tailwind variants;
 
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.moving-background {
+  background: linear-gradient(270deg, #ff7e5f, #ff9966, #feb47b, #ffcc99, #ffd1b3, #86a8e7, #a1c4fd, #91eae4, #a1ffce);
+  background-size: 800% 800%;
+  animation: gradientBackground 20s ease infinite;
+}
 
 body {
   font-size: 18px;
   min-height: 100vh;
-
 }
