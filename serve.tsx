@@ -12,7 +12,7 @@ app.use('*', serveStatic({ root: '.' }));
 
 app.onError((err, c) => {
   console.error(c.req.url, err);
-  return c.text('Not found', 404);
+  return c.redirect('/', 301);
 });
 
 
