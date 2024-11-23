@@ -22,8 +22,11 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: build lume site
+      - name: build 2022
         run: cd v2022 && deno task build
+
+      - name: build 2024
+        run: cd v2024 && deno task build
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
