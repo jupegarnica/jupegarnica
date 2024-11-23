@@ -25,6 +25,11 @@ jobs:
       - name: build 2022
         run: cd v2022 && deno task build
 
+      - name: get deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v2.x
+
       - name: build 2024
         run: cd v2024 && deno task build
 
