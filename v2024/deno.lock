@@ -2651,6 +2651,7 @@
   },
   "workspace": {
     "dependencies": [
+      "npm:@types/react@*",
       "npm:react@*",
       "npm:tailwindcss@*"
     ]

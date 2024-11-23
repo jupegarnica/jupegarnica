@@ -38,8 +38,5 @@ site.use(
 );
 site.use(postcss());
 
-site.process("*", (...args) => {
-  // console.log("Processing", args);
-  console.count("Processed");
-});
+
 export default site;
