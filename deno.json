@@ -6,10 +6,10 @@
     "tailwindcss": "npm:tailwindcss"
   },
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A --env -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
-    "cms": "deno task lume cms"
+    "fetchRepos": "deno run -A --env _scripts/fetchRepos.ts"
   },
   "compilerOptions": {
     "types": [

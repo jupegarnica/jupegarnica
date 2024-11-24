@@ -1,25 +1,16 @@
-import data from './_scripts/projects.json' with { type: "json" };
+import data from './_data/repos.json' with { type: "json" };
+import type { Project } from "./Project.type.ts";
 export const layout = 'layout.tsx';
 
-interface Project {
-  title: string;
-  date: Date;
-  description: string;
-  url: string;
-}
 
-console.log(data);
-
-const sortedData = data.sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
-
-const publicData = sortedData.filter((item: any) => !item.private && !item.fork);
-
-const projects: Project[] = publicData.map((item: any) => ({
-  title: item.name,
-  description: item.description || '',
-  url: item.homepage || item.html_url,
-  date: new Date(item.created_at)
+const projects: Project[] = data.sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()).map((project: Project) => ({
+  title: project.title,
+  description: project.description,
+  url: project.url,
+  created_at: new Date(project.created_at),
+  updated_at: new Date(project.updated_at),
 }));
+
 
 export default function Portfolio() {
   return (
@@ -28,8 +19,12 @@ export default function Portfolio() {
         <h1 className="text-4xl font-bold text-center my-10">Portfolio</h1>
         <div className="grid grid-cols-1 gap-4">
           {projects.map((project) => (
-            <div key={project.title} className="relative p-2 grid grid-cols-[8ch_1fr_35ch] group">
-              <p className="text-gray-500 text-sm border-r pr-2">{project.date.getFullYear()}</p>
+            <div key={project.title} className="relative p-2 grid grid-cols-[10ch_1fr_35ch] group">
+              <div className="text-gray-500 text-xs border-r pr-2">
+                <span>{project.created_at.getFullYear()}</span>
+                <span className="mx-1">-</span>
+                <span className="text-gray-400">{project.updated_at.getFullYear()}</span>
+              </div>
               <div className="border-r px-2">
                 <h2 className="text-xl font-bold">{project.title}</h2>
                 <p className="text-gray-600 text-sm">{project.description}</p>

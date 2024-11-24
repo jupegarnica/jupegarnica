@@ -484,6 +484,10 @@ video {
  .left-1\/2 {
   left: 50%;
 }
+ .mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
  .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -523,8 +527,8 @@ video {
  .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
- .grid-cols-\[8ch_1fr_35ch\] {
-  grid-template-columns: 8ch 1fr 35ch;
+ .grid-cols-\[10ch_1fr_35ch\] {
+  grid-template-columns: 10ch 1fr 35ch;
 }
  .gap-4 {
   gap: 1rem;
@@ -572,6 +576,10 @@ video {
 }
  .font-bold {
   font-weight: 700;
+}
+ .text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
  .text-gray-500 {
   --tw-text-opacity: 1;

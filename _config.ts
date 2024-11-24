@@ -4,7 +4,6 @@ import google_fonts from "lume/plugins/google_fonts.ts";
 import mdx from "lume/plugins/mdx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
-import basePath from "lume/plugins/base_path.ts";
 const site = lume();
 
 site.use(jsx());
@@ -37,7 +36,6 @@ site.use(
   })
 );
 site.use(postcss());
-site.use(basePath());
 
 
 export default site;
