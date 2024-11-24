@@ -1,32 +1,36 @@
 name: Deploy
-
 on:
   push:
+    branches: main
   pull_request:
-  workflow_dispatch:
+    branches: main
 
 jobs:
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write
-      contents: read
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: get deno
-        uses: denoland/setup-deno@v1
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
         with:
-          deno-version: v1.x
+          deno-version: v2.x
 
-      - name: build lume site
-        run: cd v2022 && deno task build
+      - name: Build step
+        run: "deno task build"
 
-      - name: Deploy to Deno Deploy
+      - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "garn-dev" # the name of the project on Deno Deploy
-          entrypoint: "./serve.tsx" # the entrypoint to deploy
+          project: "garn-dev"
+          entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
+          root: "_site"
+          include: _site
+          
