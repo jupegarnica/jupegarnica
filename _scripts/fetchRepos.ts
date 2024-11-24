@@ -21,12 +21,25 @@ async function fetchProjects(): Promise<Repo[]> {
     return projects;
 }
 
-
-
 function saveToFile(projects: unknown[], filename: string) {
     const dir = path.join(import.meta.dirname || '.','..', '_data');
     const filePath = path.join(dir, filename);
-    fs.writeFileSync(filePath, JSON.stringify(projects, null, 2));
+
+    let existingProjects: any[] = [];
+    if (fs.existsSync(filePath)) {
+        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        existingProjects = JSON.parse(fileContent);
+    }
+
+    const updatedProjects = projects.map((project: any) => {
+        const existingProject = existingProjects.find((p: any) => p.title === project.title);
+        if (existingProject) {
+            project.created_at = existingProject.created_at;
+        }
+        return project;
+    });
+
+    fs.writeFileSync(filePath, JSON.stringify(updatedProjects, null, 2));
     console.log(`saved to ${filePath}`);
 }
 
