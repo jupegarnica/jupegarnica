@@ -502,9 +502,6 @@ video {
  .hidden {
   display: none;
 }
- .h-\[600px\] {
-  height: 600px;
-}
  .min-h-screen {
   min-height: 100vh;
 }
@@ -577,6 +574,10 @@ video {
  .font-bold {
   font-weight: 700;
 }
+ .text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
  .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -589,6 +590,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
+ .transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+ .duration-500 {
+  transition-duration: 500ms;
+}
  /**
   * Use this directive to control where Tailwind injects the hover, focus,
   * responsive, dark mode, and other variants of each class.
@@ -596,6 +605,10 @@ video {
   * If omitted, Tailwind will append these classes to the very end of
   * your stylesheet by default.
   */
+ .hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
  .group:hover .group-hover\:block {
   display: block;
 }

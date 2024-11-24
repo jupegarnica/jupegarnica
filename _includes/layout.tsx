@@ -6,6 +6,7 @@ export default function Layout({ content }) {
         <link rel="stylesheet" type="text/css" href="./style.css" />
       </head>
       <body>{content}</body>
+        <script src="./script.js"></script>
     </html>
   );
 }

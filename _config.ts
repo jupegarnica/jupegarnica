@@ -22,11 +22,11 @@ site.use(
     // Your Tailwind options, like the theme colors and fonts
     options: {
       theme: {
-        extend: {
-          colors: {
-            blue: "#2563eb",
-          },
-        },
+        // extend: {
+        //   colors: {
+        //     blue: "#2563eb",
+        //   },
+        // },
         fontFamily: {
           sans: ["Montserrat", "sans-serif"],
           serif: ["Merriweather", "serif"],
@@ -36,6 +36,7 @@ site.use(
   })
 );
 site.use(postcss());
+site.copy("script.js");
 
 
 export default site;

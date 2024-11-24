@@ -1,5 +1,5 @@
 import data from './_data/repos.json' with { type: "json" };
-import type { Project } from "./Project.type.ts";
+import type { Project } from "./project.type.ts";
 export const layout = 'layout.tsx';
 
 
@@ -19,7 +19,7 @@ export default function Portfolio() {
         <h1 className="text-4xl font-bold text-center my-10">Portfolio</h1>
         <div className="grid grid-cols-1 gap-4">
           {projects.map((project) => (
-            <div key={project.title} className="relative p-2 grid grid-cols-[10ch_1fr_35ch] group">
+            <div key={project.title} className="relative p-2 grid grid-cols-[10ch_1fr_35ch] group project">
               <div className="text-gray-500 text-xs border-r pr-2">
                 <span>{project.created_at.getFullYear()}</span>
                 <span className="mx-1">-</span>
@@ -29,16 +29,19 @@ export default function Portfolio() {
                 <h2 className="text-xl font-bold">{project.title}</h2>
                 <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
-              <a href={project.url} className="text-blue-500 text-xs self-center pl-2">{project.url}</a>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-screen hidden group-hover:block" style={{
+              <a href={project.url} className="text-xs self-center pl-2 hover:text-blue-500">{project.url}</a>
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-screen hidden group-hover:block transition-all duration-500" style={{
                 top: '100%',
                 zIndex: 100,
                 backgroundColor: 'white',
-                border: '1px solid #ccc'
+                border: '1px solid #ccc',
+                height: '0',
+                overflow: 'hidden'
               }}>
                 <iframe
-                  src={project.url}
-                  className="w-full h-[600px] border-0"
+                  data-src={project.url}
+                  className="w-full border-0 transition-all duration-500"
+                  style={{ height: '100%' }}
                 ></iframe>
               </div>
             </div>

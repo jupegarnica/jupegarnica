@@ -1,17 +1,16 @@
 export interface Project {
   title: string;
   description: string;
-  created_at: Date;
-  updated_at: Date;
+  created_at: Date | string;
+  updated_at: Date | string;
   url: string;
 }
-export interface ProjectRaw {
+export interface Repo {
   id: number;
   node_id: string;
   name: string;
   full_name: string;
   private: boolean;
-  owner: Owner;
   html_url: string;
   description: string;
   fork: boolean;
@@ -79,7 +78,6 @@ export interface ProjectRaw {
   allow_forking: boolean;
   is_template: boolean;
   web_commit_signoff_required: boolean;
-  topics: any[];
   visibility: string;
   forks: number;
   open_issues: number;

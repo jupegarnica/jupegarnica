@@ -1,12 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { Project, ProjectRaw } from "../Project.type.ts";
+import type { Project, Repo } from "../project.type.ts";
 
 const GITHUB_API_URL = 'https://api.github.com';
 const USERNAME = 'jupegarnica';
 const TOKEN = Deno.env.get('GITHUB_TOKEN');  // Use environment variables for security
 
-async function fetchProjects(): Promise<ProjectRaw[]> {
+async function fetchProjects(): Promise<Repo[]> {
     const response = await fetch(`${GITHUB_API_URL}/users/${USERNAME}/repos`, {
         headers: {
             'Authorization': `token ${TOKEN}`
@@ -32,7 +32,7 @@ function saveProjectsToFile(projects: Project[]) {
 
 async function main() {
     try {
-        let projects: ProjectRaw[] = await fetchProjects();
+        let projects: Repo[] = await fetchProjects();
         const repos: Project[] = projects.map((project: any) => ({
             title: project.name,
             description: project.description || '',
