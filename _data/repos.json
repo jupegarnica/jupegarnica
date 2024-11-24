@@ -14,25 +14,11 @@
     "updated_at": "2023-03-28T14:27:26.000Z"
   },
   {
-    "title": "awesome-deno",
-    "description": "Curated list of awesome things related to Deno",
-    "url": "https://github.com/jupegarnica/awesome-deno",
-    "created_at": "2022-11-15T07:46:17.000Z",
-    "updated_at": "2022-11-15T06:31:24.000Z"
-  },
-  {
     "title": "chat-interface",
     "description": "react-chat-interface",
     "url": "https://github.com/jupegarnica/chat-interface",
     "created_at": "2018-05-10T15:31:04.000Z",
     "updated_at": "2018-05-10T15:31:06.000Z"
-  },
-  {
-    "title": "cli-highlight-deno",
-    "description": "port for deno of cli-highlight",
-    "url": "https://cli-highlight.surge.sh",
-    "created_at": "2022-11-10T07:38:42.000Z",
-    "updated_at": "2022-11-06T12:33:18.000Z"
   },
   {
     "title": "clone-wordpress",
@@ -49,32 +35,11 @@
     "updated_at": "2024-11-11T09:09:21.000Z"
   },
   {
-    "title": "container2wasm-demo-deno",
-    "description": "",
-    "url": "https://ktock.github.io/container2wasm-demo-deno/",
-    "created_at": "2024-05-21T06:51:43.000Z",
-    "updated_at": "2024-05-21T06:51:43.000Z"
-  },
-  {
     "title": "deno-deploy-playground",
     "description": "",
     "url": "https://github.com/jupegarnica/deno-deploy-playground",
     "created_at": "2021-04-01T14:22:54.000Z",
     "updated_at": "2021-05-20T15:20:29.000Z"
-  },
-  {
-    "title": "deno-template",
-    "description": "My deno starter",
-    "url": "https://github.com/jupegarnica/deno-template",
-    "created_at": "2022-03-06T15:41:54.000Z",
-    "updated_at": "2022-03-06T15:57:33.000Z"
-  },
-  {
-    "title": "deno_std",
-    "description": "Deno standard library",
-    "url": "https://deno.land/std/",
-    "created_at": "2023-05-24T14:53:19.000Z",
-    "updated_at": "2023-05-24T14:53:27.000Z"
   },
   {
     "title": "DNI-spanish-nid-validator",
@@ -85,10 +50,10 @@
   },
   {
     "title": "dns",
-    "description": "",
-    "url": "https://github.com/jupegarnica/dns",
+    "description": "Dns resolver",
+    "url": "https://dns.garn.dev/garn.dev",
     "created_at": "2024-11-09T16:28:18.000Z",
-    "updated_at": "2024-11-09T18:31:10.000Z"
+    "updated_at": "2024-11-24T17:47:37.000Z"
   },
   {
     "title": "dnt_prompt",
@@ -96,13 +61,6 @@
     "url": "https://github.com/jupegarnica/dnt_prompt",
     "created_at": "2022-09-25T09:51:31.000Z",
     "updated_at": "2022-10-25T08:49:44.000Z"
-  },
-  {
-    "title": "docker-noop",
-    "description": "",
-    "url": "https://github.com/jupegarnica/docker-noop",
-    "created_at": "2023-01-28T15:56:44.000Z",
-    "updated_at": "2023-01-16T19:06:52.000Z"
   },
   {
     "title": "downtime",
@@ -134,10 +92,10 @@
   },
   {
     "title": "game-of-life",
-    "description": "",
-    "url": "https://github.com/jupegarnica/game-of-life",
+    "description": "Conway's Game of Life using WebGL",
+    "url": "https://game-of-life.garn.dev/",
     "created_at": "2024-11-09T15:15:27.000Z",
-    "updated_at": "2024-11-09T15:46:10.000Z"
+    "updated_at": "2024-11-24T17:45:38.000Z"
   },
   {
     "title": "garn-exec",
@@ -189,24 +147,66 @@
     "updated_at": "2023-12-17T21:18:23.000Z"
   },
   {
-    "title": "harbiz-leaderboard",
+    "title": "hubot-twitter-adapter",
     "description": "",
-    "url": "https://github.com/jupegarnica/harbiz-leaderboard",
-    "created_at": "2024-09-01T08:39:18.000Z",
-    "updated_at": "2024-09-02T11:42:57.000Z"
+    "url": "https://github.com/jupegarnica/hubot-twitter-adapter",
+    "created_at": "2014-08-19T14:35:44.000Z",
+    "updated_at": "2019-08-13T15:48:55.000Z"
   },
   {
-    "title": "harbiz-recruit-challenges",
-    "description": "We are hiring! 🚀 If you are in our hiring process or considering Harbiz a company in which you would like to work, choose the challenge that you want, solve it and send us! 😎",
-    "url": "https://github.com/jupegarnica/harbiz-recruit-challenges",
-    "created_at": "2024-08-31T08:05:06.000Z",
-    "updated_at": "2024-09-01T08:42:04.000Z"
+    "title": "ip-garn-dev",
+    "description": "what's your ip?",
+    "url": "https://ip.garn.dev/",
+    "created_at": "2024-11-09T06:21:53.000Z",
+    "updated_at": "2024-11-24T17:50:29.000Z"
   },
   {
-    "title": "https-portal",
-    "description": "A fully automated HTTPS server powered by Nginx, Let's Encrypt and Docker.",
-    "url": "https://github.com/jupegarnica/https-portal",
-    "created_at": "2023-01-28T15:40:50.000Z",
-    "updated_at": "2023-01-28T15:41:27.000Z"
+    "title": "jupegarnica",
+    "description": "My personal page.",
+    "url": "https://garn.dev/",
+    "created_at": "2020-12-02T10:23:02.000Z",
+    "updated_at": "2024-11-24T16:48:07.000Z"
+  },
+  {
+    "title": "jupegarnica-v2018",
+    "description": "My personal webpage at 2018",
+    "url": "https://jupegarnica-v2018.deno.dev/",
+    "created_at": "2024-11-24T10:27:08.000Z",
+    "updated_at": "2024-11-24T12:01:48.000Z"
+  },
+  {
+    "title": "jupegarnica-v2020",
+    "description": "My personal webpage at 2020",
+    "url": "https://jupegarnica-v2020.deno.dev/",
+    "created_at": "2024-11-24T10:31:46.000Z",
+    "updated_at": "2024-11-24T12:02:08.000Z"
+  },
+  {
+    "title": "jupegarnica-v2022",
+    "description": "My personal webpage at 2022",
+    "url": "https://jupegarnica-v2022.deno.dev/",
+    "created_at": "2024-11-24T10:30:53.000Z",
+    "updated_at": "2024-11-24T12:10:32.000Z"
+  },
+  {
+    "title": "kata-chrismas-tree",
+    "description": "",
+    "url": "https://github.com/jupegarnica/kata-chrismas-tree",
+    "created_at": "2020-11-26T18:40:38.000Z",
+    "updated_at": "2020-11-26T18:41:07.000Z"
+  },
+  {
+    "title": "load-env-files",
+    "description": "populate .env files into enviroment variables",
+    "url": "https://deno.land/x/load_env_files",
+    "created_at": "2022-09-17T11:08:41.000Z",
+    "updated_at": "2022-09-18T14:18:54.000Z"
+  },
+  {
+    "title": "meaningfulcolors",
+    "description": "Words transformed into colors.",
+    "url": "http://jupegarnica.github.io/meaningfulcolors",
+    "created_at": "2014-11-02T17:04:05.000Z",
+    "updated_at": "2023-01-31T15:20:14.000Z"
   }
 ]

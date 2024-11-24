@@ -18,12 +18,13 @@ const projects: Project[] = data
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen p-4">
       <div className="container mx-auto max-w-3xl" style={{ maxWidth: '920px' }}>
-        <header>
+        <header className="flex flex-row justify-between items-center">
           <h1 className="text-4xl font-bold my-10">Juan Garnica</h1>
+          <h4><a href="https://github.com/jupegarnica">About</a></h4>
         </header>
-        <div className="grid grid-cols-1 gap-4">
+        <main className="grid grid-cols-1 gap-4">
           {projects.map((project) => (
             <div key={project.title} className="relative p-2 grid grid-cols-[10ch_1fr_35ch] group project">
               <div className="text-sm border-r pr-4 flex items-center">
@@ -35,7 +36,7 @@ export default function Portfolio() {
                 <h2 className="title text-xl font-bold">{project.title}</h2>
                 <p className="text-gray-400 text-sm">{project.description}</p>
               </div>
-              <a href={project.url} className="text-xs self-center pl-2 hover:text-blue-500">{project.url}</a>
+              <a href={project.url} className="text-xs self-center pl-2 hover:text-blue-500">{project.url.replace(/https?:\/\//,'')}</a>
               <div className="absolute left-1/2 transform -translate-x-1/2 w-screen transition-all duration-500 group-hover:h-96" style={{
                 top: '100%',
                 zIndex: 100,
@@ -51,7 +52,11 @@ export default function Portfolio() {
               </div>
             </div>
           ))}
-        </div>
+        </main>
+        <footer className="flex flex-row justify-between items-center py-8">
+          <p>© 2024</p>
+          <p><a href="https://github.com/jupegarnica/jupegarnica">Source</a></p>
+        </footer>
       </div>
     </div>
   )
