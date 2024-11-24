@@ -46,11 +46,11 @@
 body {
   font-size: 18px;
   min-height: 100vh;
+  font-family: "Merriweather", serif;
   font-family: Montserrat, sans-serif;
 }
 
 .title {
-  font-family: "Merriweather", serif;
 }
 .project {
   cursor: s-resize;

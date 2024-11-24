@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projectRows = document.querySelectorAll('.project');
-  console.log({projectRows});
-
   projectRows.forEach(row => {
     row.addEventListener('click', () => {
       const iframeContainer = row.querySelector('div.absolute');

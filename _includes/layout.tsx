@@ -3,6 +3,7 @@ export default function Layout({ content }) {
     <html>
       <head>
         <title>garn.dev</title>
+        <link rel="stylesheet" type="text/css" href="./fonts.css" />
         <link rel="stylesheet" type="text/css" href="./style.css" />
       </head>
       <body>{content}</body>
