@@ -1,15 +1,19 @@
 import data from './_data/repos.json' with { type: "json" };
-import type { Project } from "./project.type.ts";
 export const layout = 'layout.tsx';
+import type { Project } from "./project.type.ts";
 
 
-const projects: Project[] = data.sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()).map((project: Project) => ({
-  title: project.title,
-  description: project.description,
-  url: project.url,
-  created_at: new Date(project.created_at),
-  updated_at: new Date(project.updated_at),
-}));
+
+const projects: Project[] = data
+  .map((project) => ({
+    title: project.title,
+    description: project.description,
+    url: project.url,
+    created_at: new Date(project.created_at),
+    updated_at: new Date(project.updated_at),
+  }))
+  .sort((a: any, b: any) => (b.created_at).getTime() - (a.created_at).getTime())
+
 
 
 export default function Portfolio() {
@@ -26,15 +30,14 @@ export default function Portfolio() {
                 <span className="text-gray-400">{project.updated_at.getFullYear()}</span>
               </div>
               <div className="border-r px-2">
-                <h2 className="text-xl font-bold">{project.title}</h2>
+                <h2 className="title text-xl font-bold">{project.title}</h2>
                 <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
               <a href={project.url} className="text-xs self-center pl-2 hover:text-blue-500">{project.url}</a>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-screen hidden group-hover:block transition-all duration-500" style={{
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-screen transition-all duration-500 group-hover:h-96" style={{
                 top: '100%',
                 zIndex: 100,
                 backgroundColor: 'white',
-
                 height: '0',
                 overflow: 'hidden'
               }}>

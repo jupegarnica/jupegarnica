@@ -20,19 +20,20 @@ site.use(
     extensions: [".html", ".jsx", ".tsx", ".mdx", ".js", ".ts"],
 
     // Your Tailwind options, like the theme colors and fonts
-    options: {
-      theme: {
-        // extend: {
-        //   colors: {
-        //     blue: "#2563eb",
-        //   },
-        // },
-        fontFamily: {
-          sans: ["Montserrat", "sans-serif"],
-          serif: ["Merriweather", "serif"],
-        },
-      },
-    },
+    // options: {
+    //   theme: {
+    //     extend: {
+    //       fontFamily: {
+    //         sans: ['Montserrat', 'sans-serif'],
+    //         serif: ['Merriweather', 'serif'],
+    //       },
+    //     },
+    //     fontFamily: {
+    //       sans: ["Montserrat", "sans-serif"],
+    //       serif: ["Merriweather", "serif"],
+    //     },
+    //   },
+    // },
   })
 );
 site.use(postcss());

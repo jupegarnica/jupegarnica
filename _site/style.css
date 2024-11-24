@@ -142,7 +142,7 @@
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Montserrat, sans-serif; /* 4 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -499,9 +499,6 @@ video {
  .grid {
   display: grid;
 }
- .hidden {
-  display: none;
-}
  .min-h-screen {
   min-height: 100vh;
 }
@@ -609,8 +606,8 @@ video {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
- .group:hover .group-hover\:block {
-  display: block;
+ .group:hover .group-hover\:h-96 {
+  height: 24rem;
 }
  @keyframes gradientBackground {
   0% {
@@ -631,4 +628,11 @@ video {
  body {
   font-size: 18px;
   min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+}
+ .title {
+  font-family: "Merriweather", serif;
+}
+ .project {
+  cursor: s-resize;
 }
