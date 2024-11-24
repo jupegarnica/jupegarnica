@@ -33,19 +33,19 @@ function saveToFile(projects: unknown[], filename: string) {
 async function main() {
     try {
         const projects: Repo[] = await fetchProjects();
-        console.log(projects.length);
-
         const repos: Project[] = projects.map((project: any) => ({
             title: project.name,
             description: project.description || '',
             url: project.homepage || project.html_url,
             created_at: new Date(project.created_at),
             updated_at: new Date(project.updated_at)
-        }));
+        })).toSorted((a: any, b: any) => (b.created_at).getTime() - (a.created_at).getTime());
         saveToFile(projects, 'projects.json');
         saveToFile(repos, 'repos.json');
     } catch (error) {
         console.error(error);
+        throw new Error("Failed to fetch projects");
+
     }
 }
 

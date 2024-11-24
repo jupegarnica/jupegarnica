@@ -12,7 +12,6 @@ const projects: Project[] = data
     created_at: new Date(project.created_at),
     updated_at: new Date(project.updated_at),
   }))
-  .sort((a: any, b: any) => (b.created_at).getTime() - (a.created_at).getTime())
 
 
 
