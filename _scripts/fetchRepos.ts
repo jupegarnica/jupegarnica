@@ -23,16 +23,18 @@ async function fetchProjects(): Promise<Repo[]> {
 
 
 
-function saveProjectsToFile(projects: Project[]) {
+function saveToFile(projects: unknown[], filename: string) {
     const dir = path.join(import.meta.dirname || '.','..', '_data');
-    const filePath = path.join(dir, 'repos.json');
+    const filePath = path.join(dir, filename);
     fs.writeFileSync(filePath, JSON.stringify(projects, null, 2));
-    console.log(`Projects saved to ${filePath}`);
+    console.log(`saved to ${filePath}`);
 }
 
 async function main() {
     try {
-        let projects: Repo[] = await fetchProjects();
+        const projects: Repo[] = await fetchProjects();
+        console.log(projects.length);
+
         const repos: Project[] = projects.map((project: any) => ({
             title: project.name,
             description: project.description || '',
@@ -40,7 +42,8 @@ async function main() {
             created_at: new Date(project.created_at),
             updated_at: new Date(project.updated_at)
         }));
-        saveProjectsToFile(repos);
+        saveToFile(projects, 'projects.json');
+        saveToFile(repos, 'repos.json');
     } catch (error) {
         console.error(error);
     }
