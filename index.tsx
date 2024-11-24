@@ -34,7 +34,7 @@ export default function Portfolio() {
                 top: '100%',
                 zIndex: 100,
                 backgroundColor: 'white',
-                border: '1px solid #ccc',
+
                 height: '0',
                 overflow: 'hidden'
               }}>
