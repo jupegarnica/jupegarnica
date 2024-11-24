@@ -1,3 +1,0 @@
-scripts:
-  start: deno run --allow-net --allow-read=./ --allow-env=DENO_REGION serve.tsx
-  dev: deno run --allow-env=DENO_REGION --allow-net --allow-read=./ --watch serve.tsx
