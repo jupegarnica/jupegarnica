@@ -1,4 +1,4 @@
-export default function Layout({ content }) {
+export default function Layout({ content }: { content: React.ReactNode }) {
   return (
     <html>
       <head>

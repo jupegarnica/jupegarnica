@@ -8,7 +8,7 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A --env -",
     "build": "deno task lume",
-    "serve": "deno task lume -s",
+    "dev": "deno task lume -s",
     "fetchRepos": "deno run -A --env _scripts/fetchRepos.ts"
   },
   "compilerOptions": {
