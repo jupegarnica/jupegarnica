@@ -27,6 +27,10 @@ function ProjectDates({ created_at, updated_at }: { created_at: Date, updated_at
 }
 
 function ProjectItem({ project }: { project: Project }) {
+  const cleanedUrl = project.url.replace(/\/$/, '').replace(/https?:\/\//,''); // Remove trailing slash if present
+  const [domain, ...pathParts] = cleanedUrl.split('/');
+  const pathname = pathParts.join('/');
+
   return (
     <div key={project.title} className="relative p-2 grid grid-cols-[10ch_1fr_35ch] group project">
       <ProjectDates created_at={project.created_at} updated_at={project.updated_at} />
@@ -34,7 +38,10 @@ function ProjectItem({ project }: { project: Project }) {
         <h2 className="title text-xl font-bold">{project.title}</h2>
         <p className="text-gray-400 text-sm">{project.description}</p>
       </div>
-      <a href={project.url} className="text-xs self-center pl-2 hover:text-blue-500">{project.url.replace(/https?:\/\//,'')}</a>
+      <a href={cleanedUrl} className="text-xs self-center pl-2 hover:text-blue-500">
+        <span className="font-bold">{domain}</span>
+        {pathname && <span className="text-gray-400">/{pathname}</span>}
+      </a>
       <div className="absolute left-1/2 transform -translate-x-1/2 w-screen transition-all duration-500 group-hover:h-96" style={{
         top: '100%',
         zIndex: 100,
@@ -43,7 +50,7 @@ function ProjectItem({ project }: { project: Project }) {
         overflow: 'hidden'
       }}>
         <iframe
-          data-src={project.url}
+          data-src={cleanedUrl}
           className="w-full border-0 transition-all duration-500"
           style={{ height: '100%' }}
         ></iframe>
