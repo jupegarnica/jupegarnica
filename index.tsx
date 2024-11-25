@@ -73,7 +73,7 @@ export default function Portfolio() {
           ))}
         </main>
         <footer className="flex flex-row justify-between items-center py-8">
-          <p>© 2024</p>
+          <p>© {new Date().getFullYear()}</p>
           <p><a href="https://github.com/jupegarnica/jupegarnica">Source</a></p>
         </footer>
       </div>
