@@ -14,7 +14,7 @@ const projects: Project[] = data
 
 function ProjectDates({ created_at, updated_at }: { created_at: Date, updated_at: Date }) {
   return (
-    <div className="date text-sm border-r pr-4 flex items-center text-gray-400">
+    <div className="date text-sm border-r pr-4 flex items-cente">
       <span className="">{created_at.getFullYear()}</span>
       {created_at.getFullYear() !== updated_at.getFullYear() && (
         <>
@@ -38,7 +38,7 @@ function ProjectItem({ project }: { project: Project }) {
         <h2 className="title text-md font-bold">{project.title}</h2>
         <p className="description text-gray-400 text-xs">{project.description}</p>
       </div>
-      <a href={project.url} className="url text-xs self-center pl-2 hover:text-blue-500">
+      <a href={project.url} className="url text-xs self-center pl-2">
         <span className="font-bold">{domain}</span>
         {pathname && <span className="text-gray-400">/{pathname}</span>}
       </a>

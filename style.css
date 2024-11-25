@@ -1,30 +1,7 @@
-/**
- * This injects Tailwind's base styles and any base styles registered by
- * plugins.
- */
- @tailwind base;
-
- /**
-  * This injects Tailwind's component classes and any component classes
-  * registered by plugins.
-  */
- @tailwind components;
-
- /**
-  * This injects Tailwind's utility classes and any utility classes registered
-  * by plugins.
-  */
- @tailwind utilities;
-
- /**
-  * Use this directive to control where Tailwind injects the hover, focus,
-  * responsive, dark mode, and other variants of each class.
-  *
-  * If omitted, Tailwind will append these classes to the very end of
-  * your stylesheet by default.
-  */
- @tailwind variants;
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
 @keyframes gradientBackground {
   0% {
     background-position: 0% 50%;
@@ -41,17 +18,43 @@
   background: linear-gradient(270deg, #ff7e5f, #ff9966, #feb47b, #ffcc99, #ffd1b3, #86a8e7, #a1c4fd, #91eae4, #a1ffce);
   background-size: 800% 800%;
   animation: gradientBackground 20s ease infinite;
+} */
+
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #a1ffce;
+  --link-color: #ffcc99;
+  --muted-color: #e1e0df;
+  --link-color-underline: #ffcc998f;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --link-color: #0070f3;
+    --link-color-underline: #0071f38d;
+    --muted-color: #666;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-size: 15px;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* .title {
@@ -61,18 +64,33 @@ body {
 .description {
   /* opacity: 0.9; */
   font-weight: 400;
-  color: #e1e0df;
+  color: var(--muted-color);
 }
-
 
 .date {
   font-weight: 900;
-  color: #e1e0df;
+  color: var(--muted-color);
+  opacity: 0.5;
 }
 
 .project {
   cursor: s-resize;
 }
 .url:hover span {
-  color: blue;
+  color: var(--link-color);
+}
+
+a:hover, .url:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--link-color-underline);
+}
+
+a,
+.url {
+  text-decoration: none;
+  text-underline-offset: 1em;
+  transition: all 0.5s ease;
 }
