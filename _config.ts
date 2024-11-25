@@ -4,6 +4,7 @@ import google_fonts from "lume/plugins/google_fonts.ts";
 import mdx from "lume/plugins/mdx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
+import { tailwindcssConfig } from "./tailwind.config.js";
 const site = lume();
 
 site.use(jsx());
@@ -16,9 +17,7 @@ site.use(
 );
 site.use(mdx());
 site.use(
-  tailwindcss({
-    extensions: [".html", ".jsx", ".tsx", ".mdx", ".js", ".ts"],
-  })
+  tailwindcss(tailwindcssConfig)
 );
 site.use(postcss());
 site.copy("script.js");
