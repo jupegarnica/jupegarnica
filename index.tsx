@@ -35,8 +35,8 @@ function ProjectItem({ project }: { project: Project }) {
     <div key={project.title} className="relative p-2 grid grid-cols-[10ch_1fr_35ch] group project">
       <ProjectDates created_at={project.created_at} updated_at={project.updated_at} />
       <div className="border-r px-2">
-        <h2 className="title text-xl font-bold">{project.title}</h2>
-        <p className="text-gray-400 text-sm">{project.description}</p>
+        <h2 className="title text-md font-bold">{project.title}</h2>
+        <p className="text-gray-400 text-xs">{project.description}</p>
       </div>
       <a href={cleanedUrl} className="text-xs self-center pl-2 hover:text-blue-500">
         <span className="font-bold">{domain}</span>
