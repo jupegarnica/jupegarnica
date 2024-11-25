@@ -14,12 +14,12 @@ const projects: Project[] = data
 
 function ProjectDates({ created_at, updated_at }: { created_at: Date, updated_at: Date }) {
   return (
-    <div className="text-sm border-r pr-4 flex items-center">
-      <span className="font-bold text-gray-400">{created_at.getFullYear()}</span>
+    <div className="text-sm border-r pr-4 flex items-center text-gray-400 font-light">
+      <span className="">{created_at.getFullYear()}</span>
       {created_at.getFullYear() !== updated_at.getFullYear() && (
         <>
-          <span className="mx-1 text-gray-500">-</span>
-          <span className="text-gray-400 text-xs" style={{ fontSize: '0.8em' }}>{updated_at.getFullYear().toString().slice(-2)}</span>
+          <span className="mx-1">-</span>
+          <span style={{ fontSize: '0.8em' }}>{updated_at.getFullYear().toString().slice(-2)}</span>
         </>
       )}
     </div>
@@ -38,7 +38,7 @@ function ProjectItem({ project }: { project: Project }) {
         <h2 className="title text-md font-bold">{project.title}</h2>
         <p className="text-gray-400 text-xs">{project.description}</p>
       </div>
-      <a href={cleanedUrl} className="text-xs self-center pl-2 hover:text-blue-500">
+      <a href={project.url} className="url text-xs self-center pl-2 hover:text-blue-500">
         <span className="font-bold">{domain}</span>
         {pathname && <span className="text-gray-400">/{pathname}</span>}
       </a>
@@ -50,7 +50,7 @@ function ProjectItem({ project }: { project: Project }) {
         overflow: 'hidden'
       }}>
         <iframe
-          data-src={cleanedUrl}
+          data-src={project.url}
           className="w-full border-0 transition-all duration-500"
           style={{ height: '100%' }}
         ></iframe>
