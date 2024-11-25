@@ -22,17 +22,17 @@
 
 :root {
   --bg-color: #1a1a1a;
-  --text-color: #a1ffce;
-  --link-color: #ffcc99;
+  --text-color: #f5f5f5;
+  --link-color: #5da5f6;
   --muted-color: #e1e0df;
-  --link-color-underline: #ffcc998f;
+  --link-color-underline: #5da5f655;
 }
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #f5f5f5;
     --text-color: #333;
     --link-color: #0070f3;
-    --link-color-underline: #0071f38d;
+    --link-color-underline: #0070f355;
     --muted-color: #666;
   }
 }
