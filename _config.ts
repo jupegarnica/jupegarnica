@@ -21,6 +21,7 @@ site.use(
 );
 site.use(postcss());
 site.copy("script.js");
+site.copy("screenshots");
 
 
 export default site;

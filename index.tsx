@@ -27,7 +27,7 @@ function ProjectDates({ created_at, updated_at }: { created_at: Date, updated_at
 }
 
 function ProjectItem({ project }: { project: Project }) {
-  const cleanedUrl = project.url.replace(/\/$/, '').replace(/https?:\/\//,''); // Remove trailing slash if present
+  const cleanedUrl = project.url.replace(/\/$/, '').replace(/https?:\/\//, ''); // Remove trailing slash if present
   const [domain, ...pathParts] = cleanedUrl.split('/');
   const pathname = pathParts.join('/');
 
@@ -47,13 +47,21 @@ function ProjectItem({ project }: { project: Project }) {
         zIndex: 100,
         backgroundColor: 'white',
         height: '0',
-        overflow: 'hidden'
+        overflow: 'auto'
       }}>
-        <iframe
+        <a href={project.url} className="text-lg font-bold">
+
+          <img
+            src={`./screenshots/${project.title}.png`}
+            className="w-full border-0 transition-all duration-500"
+            style={{ objectFit: 'cover', objectPosition: 'top', heigth: 'auto' }}
+          />
+        </a>
+        {/* <iframe
           data-src={`https://iframe-it.deno.dev/${encodeURIComponent(project.url.replace('https://', ''))}`}
           className="w-full border-0 transition-all duration-500"
           style={{ height: '100%' }}
-        ></iframe>
+        ></iframe> */}
       </div>
     </div>
   );
