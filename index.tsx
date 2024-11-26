@@ -50,7 +50,7 @@ function ProjectItem({ project }: { project: Project }) {
         overflow: 'hidden'
       }}>
         <iframe
-          data-src={project.url}
+          data-src={`https://iframe-it.deno.dev/${encodeURIComponent(project.url.replace('https://', ''))}`}
           className="w-full border-0 transition-all duration-500"
           style={{ height: '100%' }}
         ></iframe>

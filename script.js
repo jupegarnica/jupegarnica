@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const iframe = iframeContainer.querySelector('iframe');
       iframeContainer.style.height = '0px';
       iframeContainer.style.border = 'none';
-      iframe.src = '';
+      // iframe.src = '';
     });
   });
 });
