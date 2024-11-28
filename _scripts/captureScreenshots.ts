@@ -14,7 +14,7 @@ const browser = await puppeteer.launch({
 
 // Create an array of promises
 const promises = projects.map(async (project) => {
-  // if (project.title !== "noop") return Promise.resolve();
+  // if (project.title !== "gron") return Promise.resolve();
 
   let page = await browser.newPage();
   let id = setTimeout(() => page.close(), 30_000);
@@ -40,12 +40,11 @@ const promises = projects.map(async (project) => {
     // Dismiss cookies if the button exists
 
     let dismisses = await clickElementWithText(page, "#docker-announcement-bar div", "✕");
-
     dismisses.push(...(await clickElementWithText(page, '[aria-label="Close"]')));
-
+    dismisses.push(...(await clickElementWithText(page, 'button', "Dismiss")));
 
     if (dismisses.length) {
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      await new Promise((resolve) => setTimeout(resolve, 10_000));
       console.log(`%cDismissing ${dismisses.length} for ${project.title}`, "color: orange");
     }
 
