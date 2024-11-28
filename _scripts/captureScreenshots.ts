@@ -12,16 +12,13 @@ const browser = await puppeteer.launch({
   headless: false,
 });
 
-// Create an array of promises
-const promises = projects.map(async (project) => {
-  // if (project.title !== "gron") return Promise.resolve();
-
+for (const project of projects) {
   let page = await browser.newPage();
-  let id = setTimeout(() => page.close(), 30_000);
+  let id = setTimeout(() => page.close(), 10_000);
   try {
     console.log(`%cCapturing screenshot for ${project.title}`, "color: green");
     const screenshotPath = join(screenshotsDir, `${project.title}.png`);
-    await page.setViewport({ width: 1280, height: 1200 });
+    await page.setViewport({ width: 1280, height: 900 });
     let res = await page.goto(project.url, { waitUntil: "networkidle2" });
     console.log(
       `%cLoaded ${project.url} response: ${res?.status()}`,
@@ -31,7 +28,6 @@ const promises = projects.map(async (project) => {
     if (!res || !res.ok) {
       throw new Error(`Failed to load ${project.url}`);
     }
-
 
     // Wait 2 seconds if title starts with 'jupegarnica'
     if (project.title.startsWith("jupegarnica")) {
@@ -44,7 +40,7 @@ const promises = projects.map(async (project) => {
     dismisses.push(...(await clickElementWithText(page, 'button', "Dismiss")));
 
     if (dismisses.length) {
-      await new Promise((resolve) => setTimeout(resolve, 10_000));
+      await new Promise((resolve) => setTimeout(resolve, 1_000));
       console.log(`%cDismissing ${dismisses.length} for ${project.title}`, "color: orange");
     }
 
@@ -60,20 +56,15 @@ const promises = projects.map(async (project) => {
   } finally {
     console.log(`%cClosing page for ${project.title}`, "color: yellow");
     clearTimeout(id);
-    // await new Promise((resolve) => setTimeout(resolve, 30_000));
     await page.close();
     console.log(`%cPage closed for ${project.title}`, "color: yellow");
   }
-});
+}
 
-// Wait for all screenshots to finish
-
-await Promise.all(promises);
 console.log("%cAll screenshots captured", "color: green");
 
 await browser.close();
 console.log("%cBrowser closed", "color: yellow");
-
 
 async function clickElementWithText(page: puppeteer.Page, query: string, text: string = '') {
   return await page.$$eval(query, (elements, _text) =>
