@@ -9,19 +9,16 @@ await ensureDir(screenshotsDir);
 
 const browser = await puppeteer.launch({
   channel: "chrome",
-  headless: false,
-
+  headless: true,
 });
-
 
 // Create an array of promises
 const promises = projects.map(async (project) => {
   if (project.title !== "noop") return Promise.resolve();
 
   let page = await browser.newPage();
+  let id = setTimeout(() => page.close(), 30_000);
   try {
-    setTimeout(() => page.close(), 30_000);
-
     console.log(`%cCapturing screenshot for ${project.title}`, "color: green");
     const screenshotPath = join(screenshotsDir, `${project.title}.png`);
     let res = await page.goto(project.url, { waitUntil: "networkidle2" });
@@ -41,9 +38,15 @@ const promises = projects.map(async (project) => {
       await new Promise((resolve) => setTimeout(resolve, 2000));
     }
     // Dismiss cookies if the button exists
-    const dismissButton = await page.$$eval('#docker-announcement-bar div', elements => elements.filter(el => el.innerText.includes('x')));
-    if (dismissButton) {
-      console.log("%cDismissing cookies for", "color: yellow", project.title);
+    const dismissButtons = await page.$$eval(
+      "#docker-announcement-bar div",
+      (elements) =>
+        [...elements]
+          .filter((el) => el.innerText?.toLowerCase().includes("x"))
+          .map(el => (el.click(), el)),
+    );
+    if (dismissButtons.length) {
+      console.log("%cDismissing cookies for", "color: orange", project.title);
     }
 
     await page.screenshot({ path: screenshotPath });
@@ -57,6 +60,7 @@ const promises = projects.map(async (project) => {
     );
   } finally {
     console.log(`%cClosing page for ${project.title}`, "color: yellow");
+    clearTimeout(id);
     await page.close();
     console.log(`%cPage closed for ${project.title}`, "color: yellow");
   }
