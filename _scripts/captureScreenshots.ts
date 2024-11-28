@@ -9,7 +9,7 @@ await ensureDir(screenshotsDir);
 
 const browser = await puppeteer.launch({
   channel: "chrome",
-  headless: true,
+  headless: false,
 });
 
 // Create an array of promises
@@ -21,6 +21,7 @@ const promises = projects.map(async (project) => {
   try {
     console.log(`%cCapturing screenshot for ${project.title}`, "color: green");
     const screenshotPath = join(screenshotsDir, `${project.title}.png`);
+    await page.setViewport({ width: 1280, height: 1200 });
     let res = await page.goto(project.url, { waitUntil: "networkidle2" });
     console.log(
       `%cLoaded ${project.url} response: ${res?.status()}`,
@@ -31,22 +32,20 @@ const promises = projects.map(async (project) => {
       throw new Error(`Failed to load ${project.url}`);
     }
 
-    await page.setViewport({ width: 1280, height: 1200 });
 
     // Wait 2 seconds if title starts with 'jupegarnica'
     if (project.title.startsWith("jupegarnica")) {
       await new Promise((resolve) => setTimeout(resolve, 2000));
     }
     // Dismiss cookies if the button exists
-    const dismissButtons = await page.$$eval(
-      "#docker-announcement-bar div",
-      (elements) =>
-        [...elements]
-          .filter((el) => el.innerText?.toLowerCase().includes("x"))
-          .map(el => (el.click(), el)),
-    );
-    if (dismissButtons.length) {
-      console.log("%cDismissing cookies for", "color: orange", project.title);
+
+    let dismisses = await clickElementWithText(page, "#docker-announcement-bar div", "✕");
+
+    dismisses.push(await clickElementWithText(page, '[aria-label="Close"]'));
+
+    if (dismisses.length) {
+      await new Promise((resolve) => setTimeout(resolve, 500));
+      console.log(`%cDismissing ${dismisses.length} for ${project.title}`, "color: orange");
     }
 
     await page.screenshot({ path: screenshotPath });
@@ -61,6 +60,7 @@ const promises = projects.map(async (project) => {
   } finally {
     console.log(`%cClosing page for ${project.title}`, "color: yellow");
     clearTimeout(id);
+    // await new Promise((resolve) => setTimeout(resolve, 30_000));
     await page.close();
     console.log(`%cPage closed for ${project.title}`, "color: yellow");
   }
@@ -73,3 +73,13 @@ console.log("%cAll screenshots captured", "color: green");
 
 await browser.close();
 console.log("%cBrowser closed", "color: yellow");
+
+
+async function clickElementWithText(page: puppeteer.Page, query: string, text: string = '') {
+  return await page.$$eval(query, (elements, _text) =>
+    [...elements]
+      .filter((el) => el.innerText?.toLowerCase().includes(_text.toLowerCase()))
+      .map(el => (el.click())),
+    text
+  );
+}
