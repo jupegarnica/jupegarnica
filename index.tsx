@@ -42,7 +42,7 @@ function ProjectItem({ project }: { project: Project }) {
         <span className="font-bold">{domain}</span>
         {pathname && <span className="text-gray-400">/{pathname}</span>}
       </a>
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-screen transition-all duration-500 group-hover:h-96" style={{
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-screen transition-all duration-500" style={{
         top: '100%',
         zIndex: 100,
         backgroundColor: 'white',

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const iframe = iframeContainer.querySelector('iframe');
 
       if (iframeContainer.style.height === '0px' || iframeContainer.style.height === '') {
-        iframeContainer.style.height = '500px';
+        iframeContainer.style.height = '70vh';
         iframeContainer.style.border = '1px solid #ccc';
         iframe.src = iframe.dataset.src;
       } else {

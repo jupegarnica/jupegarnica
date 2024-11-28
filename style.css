@@ -94,3 +94,7 @@ a,
   text-underline-offset: 1em;
   transition: all 0.5s ease;
 }
+
+.group:hover .absolute {
+  height: 1500px;
+}
