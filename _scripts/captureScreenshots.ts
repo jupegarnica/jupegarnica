@@ -14,7 +14,7 @@ const browser = await puppeteer.launch({
 
 // Create an array of promises
 const promises = projects.map(async (project) => {
-  if (project.title !== "noop") return Promise.resolve();
+  // if (project.title !== "noop") return Promise.resolve();
 
   let page = await browser.newPage();
   let id = setTimeout(() => page.close(), 30_000);
@@ -41,7 +41,8 @@ const promises = projects.map(async (project) => {
 
     let dismisses = await clickElementWithText(page, "#docker-announcement-bar div", "✕");
 
-    dismisses.push(await clickElementWithText(page, '[aria-label="Close"]'));
+    dismisses.push(...(await clickElementWithText(page, '[aria-label="Close"]')));
+
 
     if (dismisses.length) {
       await new Promise((resolve) => setTimeout(resolve, 500));
@@ -78,8 +79,8 @@ console.log("%cBrowser closed", "color: yellow");
 async function clickElementWithText(page: puppeteer.Page, query: string, text: string = '') {
   return await page.$$eval(query, (elements, _text) =>
     [...elements]
-      .filter((el) => el.innerText?.toLowerCase().includes(_text.toLowerCase()))
-      .map(el => (el.click())),
+      .filter((el) => (el as HTMLElement).innerText?.toLowerCase().includes(_text.toLowerCase()))
+      .map(el => ((el as HTMLElement).click())),
     text
   );
 }
