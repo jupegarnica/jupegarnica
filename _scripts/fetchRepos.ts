@@ -7,17 +7,34 @@ const USERNAME = "jupegarnica";
 const TOKEN = Deno.env.get("GITHUB_TOKEN"); // Use environment variables for security
 
 async function fetchProjects(): Promise<Repo[]> {
-  const response = await fetch(`${GITHUB_API_URL}/users/${USERNAME}/repos`, {
-    headers: {
-      Authorization: `token ${TOKEN}`,
-    },
-  });
+  let projects: Repo[] = [];
+  let page = 1;
 
-  if (!response.ok) {
-    throw new Error(`Error fetching projects: ${response.statusText}`);
+  while (true) {
+    const response = await fetch(
+      `${GITHUB_API_URL}/users/${USERNAME}/repos?page=${page}&per_page=100`,
+      {
+        headers: {
+          Authorization: `token ${TOKEN}`,
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`Error fetching projects: ${response.statusText}`);
+    }
+
+    const pageProjects = await response.json();
+    projects = projects.concat(pageProjects);
+
+    const linkHeader = response.headers.get("Link");
+    if (!linkHeader || !linkHeader.includes('rel="next"')) {
+      break;
+    }
+
+    page++;
   }
 
-  const projects = await response.json();
   return projects;
 }
 
