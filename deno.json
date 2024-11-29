@@ -10,7 +10,7 @@
     "build": "deno task lume",
     "dev": "deno task lume -s",
     "fetchRepos": "deno run -A --env _scripts/fetchRepos.ts",
-    "captureScreenShots": "deno run -A _scripts/captureScreenShots.ts"
+    "captureScreenshots": "deno run -A _scripts/captureScreenshots.ts"
   },
   "compilerOptions": {
     "types": [

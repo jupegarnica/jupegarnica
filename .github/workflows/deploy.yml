@@ -31,7 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
-      - run: deno task captureScreenShots
+      - run: deno task captureScreenshots
 
       - name: Commit screenshots
         run: |
