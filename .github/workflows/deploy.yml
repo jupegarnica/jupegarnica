@@ -1,0 +1,53 @@
+name: Deploy
+on:
+  schedule:
+    - cron: '0 0 1 * *' # Runs at 00:00 on the 1st of every month
+  workflow_dispatch: # Allows manual triggering
+  push:
+    branches: v2024
+  # pull_request:
+  #   branches: v2024
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - run: deno task fetchRepos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+      - run: deno task captureScreenShots
+
+      - name: Commit screenshots
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add screenshots/
+          git commit -m "Update screenshots"
+          git push
+
+      - name: Build step
+        run: "deno task build"
+
+      - name: Upload to Deno Deploy
+        uses: denoland/deployctl@v1
+        with:
+          project: "garn-dev"
+          entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
+          root: "_site"
+          include: _site

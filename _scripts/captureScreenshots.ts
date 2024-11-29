@@ -9,7 +9,7 @@ await ensureDir(screenshotsDir);
 
 const browser = await puppeteer.launch({
   channel: "chrome",
-  headless: false,
+  // headless: Deno.env.get("CI") === "true",
 });
 
 for (const project of projects) {
