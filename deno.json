@@ -9,7 +9,7 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A --env -",
     "build": "deno task lume",
     "dev": "deno task lume -s",
-    "fetchRepos": "deno run -A --env _scripts/fetchRepos.ts && deno task captureScreenShots",
+    "fetchRepos": "deno run -A --env _scripts/fetchRepos.ts",
     "captureScreenShots": "deno run -A _scripts/captureScreenShots.ts"
   },
   "compilerOptions": {
