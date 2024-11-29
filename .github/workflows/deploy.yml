@@ -4,7 +4,7 @@ on:
     - cron: '0 0 1 * *' # Runs at 00:00 on the 1st of every month
   workflow_dispatch: # Allows manual triggering
   push:
-    branches: v2024
+    branches: 2024
   # pull_request:
   #   branches: v2024
 
