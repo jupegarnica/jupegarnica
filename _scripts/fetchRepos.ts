@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Project, Repo } from "../project.type.ts";
+// @ts-ignore ¿?¡'
+import { Project, Repo } from "../Project.type.ts";
 
 const GITHUB_API_URL = "https://api.github.com";
 const USERNAME = "jupegarnica";
