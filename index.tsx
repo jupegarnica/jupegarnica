@@ -1,6 +1,6 @@
 import data from './_data/repos.json' with { type: "json" };
 export const layout = 'layout.tsx';
-import type { Project } from "./project.type.ts";
+import type { Project } from "./Project.type.ts";
 
 const projects: Project[] = data
   .map((project) => ({
