@@ -72,12 +72,11 @@ async function main() {
         description: project.description || "",
         url: project.homepage || project.html_url,
         created_at: new Date(project.created_at),
-        updated_at: new Date(project.updated_at),
+        updated_at: new Date(project.pushed_at),
       }))
       .toSorted(
         (a: any, b: any) => b.created_at.getTime() - a.created_at.getTime()
       );
-    saveToFile(projects, "projects.json");
     saveToFile(repos, "repos.json");
   } catch (error) {
     console.error(error);
