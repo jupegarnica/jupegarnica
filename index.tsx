@@ -14,7 +14,7 @@ const projects: Project[] = data
 
 function ProjectDates({ created_at, updated_at }: { created_at: Date, updated_at: Date }) {
   return (
-    <div className="date text-sm border-r pr-4 flex items-cente">
+    <div className="date text-sm border-r pr-4 flex items-center">
       <span className="">{created_at.getFullYear()}</span>
       {created_at.getFullYear() !== updated_at.getFullYear() && (
         <>
