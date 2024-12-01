@@ -1,4 +1,3 @@
-// scripts/extract-screenshots.ts
 import puppeteer from "npm:puppeteer-core";
 import { ensureDir, exists } from "jsr:@std/fs";
 import { join } from "jsr:@std/path";
@@ -13,19 +12,18 @@ const browser = await puppeteer.launch({
 });
 
 for (const project of projects) {
+  const screenshotPath = join(screenshotsDir, `${project.title}.png`);
+  if (Deno.env.get("CI") === "true") {
+    if (await exists(screenshotPath)) {
+      console.log(`%cScreenshot already exists for ${project.title}`, "color: green");
+      continue;
+    }
+  }
   let page = await browser.newPage();
   let id = setTimeout(() => page.close(), 20_000); // Increased timeout duration
   try {
-    console.log(`%cCapturing screenshot for ${project.title}`, "color: green");
-    const screenshotPath = join(screenshotsDir, `${project.title}.png`);
 
-    if (Deno.env.get("CI") === "true") {
 
-      if (await exists(screenshotPath)) {
-        console.log(`%cScreenshot already exists for ${project.title}`, "color: yellow");
-        continue;
-      }
-    }
 
     await page.setViewport({ width: 1280, height: 900 });
     let res = await page.goto(project.url, { waitUntil: "networkidle2" });
