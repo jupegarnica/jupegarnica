@@ -56,6 +56,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "garn-dev"
-          entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
-          root: "."
-          include: _site
+          entrypoint: "jsr:@std/http/file-server"
+          include: "./_site"
