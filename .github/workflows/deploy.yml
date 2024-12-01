@@ -46,8 +46,8 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add screenshots/
-          git commit -m "Update screenshots"
-          git push
+          git commit -m "Update screenshots" || echo "No changes to commit"
+          git push || echo "No changes to commit"
 
       - name: Build step
         run: "deno task build"
