@@ -57,5 +57,5 @@ jobs:
         with:
           project: "garn-dev"
           entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
-          root: "_site"
+          root: "."
           include: _site
