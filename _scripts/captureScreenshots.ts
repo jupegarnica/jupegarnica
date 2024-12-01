@@ -14,7 +14,7 @@ const browser = await puppeteer.launch({
 
 for (const project of projects) {
   let page = await browser.newPage();
-  let id = setTimeout(() => page.close(), 10_000);
+  let id = setTimeout(() => page.close(), 20_000); // Increased timeout duration
   try {
     console.log(`%cCapturing screenshot for ${project.title}`, "color: green");
     const screenshotPath = join(screenshotsDir, `${project.title}.png`);
