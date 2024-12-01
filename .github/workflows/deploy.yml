@@ -1,9 +1,12 @@
 name: Deploy
 on:
+  schedule:
+    - cron: '0 0 1 * *' # Runs at 00:00 on the 1st of every month
+  workflow_dispatch: # Allows manual triggering
   push:
-    branches: main
-  pull_request:
-    branches: main
+    branches: 2024
+  # pull_request:
+  #   branches: v2024
 
 jobs:
   deploy:
@@ -23,6 +26,21 @@ jobs:
         with:
           deno-version: v2.x
 
+      - run: deno task fetchRepos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+      - run: deno task captureScreenshots
+
+      - name: Commit screenshots
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add screenshots/
+          git commit -m "Update screenshots"
+          git push
+
       - name: Build step
         run: "deno task build"
 
@@ -33,4 +51,3 @@ jobs:
           entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
           root: "_site"
           include: _site
-          

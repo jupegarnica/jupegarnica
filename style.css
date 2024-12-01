@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.moving-background {
+  background: linear-gradient(270deg, #ff7e5f, #ff9966, #feb47b, #ffcc99, #ffd1b3, #86a8e7, #a1c4fd, #91eae4, #a1ffce);
+  background-size: 800% 800%;
+  animation: gradientBackground 20s ease infinite;
+} */
+
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #f5f5f5;
+  --link-color: #5da5f6;
+  --muted-color: #e1e0df;
+  --link-color-underline: #5da5f655;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --link-color: #0070f3;
+    --link-color-underline: #0070f355;
+    --muted-color: #666;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 15px;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* .title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+} */
+
+.description {
+  /* opacity: 0.9; */
+  font-weight: 400;
+  color: var(--muted-color);
+}
+
+.date {
+  font-weight: 900;
+  color: oklab(from var(--muted-color) 0.8 a b)
+}
+
+.project {
+  cursor: s-resize;
+
+}
+.url:hover span {
+  color: var(--link-color);
+}
+
+a:hover, .url:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--link-color-underline);
+}
+
+a,
+.url {
+  text-decoration: none;
+  text-underline-offset: 1em;
+  transition: all 0.5s ease;
+}
+
+.group:hover .absolute {
+  height: 1500px;
+}
