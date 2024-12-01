@@ -35,9 +35,6 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Run Puppeteer script
-        run: node your-puppeteer-script.js
-
       - run: deno task fetchRepos
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
