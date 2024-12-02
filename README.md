@@ -2,6 +2,26 @@
 
 Here it is _Garn_, a **web developer** from _Valencia_ in love with minimalism.
 
+## Professional Experience
+
+I began coding in 2006 during my Engineering studies at UPV, working with foundational programming languages. Over the years, I have evolved into a web developer who values minimalism and efficiency. My experience spans building dynamic user interfaces, developing backend services, and optimizing applications for performance. Currently, I am contributing my skills as a developer at [harbiz](https://harbiz.io), where I focus on delivering innovative web solutions.
+
+
+# Open Source Projects
+
+Please visit my peronal website [garn.dev](https://garn.dev) to see my latest projects.
+
+
+# Get in touch
+
+- [juan@garn.dev](mailto:j.u.p.e.garnica@gmail.com)
+- [garn.dev](https://garn.dev)
+- [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
+- [github.com/jupegarnica](https://github.com/jupegarnica)
+- [linkedin.com/in/jupegarnica](https://www.linkedin.com/in/jupegarnica)
+
+
+
 ## Tech stack
 
 I am deeply convinced that embracing web standards is the future of development. My focus is on modern web technologies that enhance user experience and performance. I have a strong interest in advancements that push the boundaries of what's possible on the web, and I am enthusiastic about tools that simplify development and deployment processes.
@@ -20,12 +40,6 @@ I am deeply convinced that embracing web standards is the future of development.
 | Database   | Relational and non-relational database systems |
 | OS         | Open-source operating systems                |
 | Cloud      | Scalable cloud service providers             |
-
-## Professional Experience
-
-I began coding in 2006 during my Engineering studies at UPV, working with foundational programming languages. Over the years, I have evolved into a web developer who values minimalism and efficiency. My experience spans building dynamic user interfaces, developing backend services, and optimizing applications for performance. Currently, I am contributing my skills as a developer at [harbiz](https://harbiz.io), where I focus on delivering innovative web solutions.
-
-
 ## Live coding stats
 
 <div class="stats grid-responsive">
@@ -37,16 +51,3 @@ I began coding in 2006 during my Engineering studies at UPV, working with founda
 ![garn's GitHub stats](https://github-readme-stats.vercel.app/api?username=jupegarnica&show_icons=true&theme=dark&icon_color=fc0&bg_color=11191f33&border_color=55555555)
 
 </div>
-
-# Open Source Projects
-
-Please visit my peronal website [garn.dev](https://garn.dev) to see my latest projects.
-
-
-# Get in touch
-
-- [juan@garn.dev](mailto:j.u.p.e.garnica@gmail.com)
-- [garn.dev](https://garn.dev)
-- [twitter.com/jupegarnica](https://twitter.com/jupegarnica)
-- [github.com/jupegarnica](https://github.com/jupegarnica)
-- [linkedin.com/in/jupegarnica](https://www.linkedin.com/in/jupegarnica)
