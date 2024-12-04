@@ -25,7 +25,7 @@ for (const project of projects) {
 
 
 
-    await page.setViewport({ width: 1280, height: 900 });
+    await page.setViewport({ width: 1280, height: 600 });
     let res = await page.goto(project.url, { waitUntil: "networkidle2" });
     console.log(
       `%cLoaded ${project.url} response: ${res?.status()}`,

@@ -34,6 +34,8 @@
     "jsr:@std/toml@^1.0.1": "1.0.1",
     "jsr:@std/yaml@1.0.5": "1.0.5",
     "jsr:@std/yaml@^1.0.5": "1.0.5",
+    "npm:@ffmpeg/ffmpeg@*": "0.12.10",
+    "npm:@ffmpeg/util@*": "0.12.1",
     "npm:@js-temporal/polyfill@0.4.4": "0.4.4",
     "npm:@mdx-js/mdx@3.1.0": "3.1.0",
     "npm:@types/estree@1.0.6": "1.0.6",
@@ -166,6 +168,18 @@
     },
     "@babel/helper-validator-identifier@7.25.9": {
       "integrity": "sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ=="
+    },
+    "@ffmpeg/ffmpeg@0.12.10": {
+      "integrity": "sha512-lVtk8PW8e+NUzGZhPTWj2P1J4/NyuCrbDD3O9IGpSeLYtUZKBqZO8CNj1WYGghep/MXoM8e1qVY1GztTkf8YYQ==",
+      "dependencies": [
+        "@ffmpeg/types"
+      ]
+    },
+    "@ffmpeg/types@0.12.2": {
+      "integrity": "sha512-NJtxwPoLb60/z1Klv0ueshguWQ/7mNm106qdHkB4HL49LXszjhjCCiL+ldHJGQ9ai2Igx0s4F24ghigy//ERdA=="
+    },
+    "@ffmpeg/util@0.12.1": {
+      "integrity": "sha512-10jjfAKWaDyb8+nAkijcsi9wgz/y26LOc1NKJradNMyCIl6usQcBbhkjX5qhALrSBcOy6TOeksunTYa+a03qNQ=="
     },
     "@isaacs/cliui@8.0.2": {
       "integrity": "sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==",
