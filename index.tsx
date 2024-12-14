@@ -14,7 +14,7 @@ const projects: Project[] = data
 
 function ProjectDates({ created_at, updated_at }: { created_at: Date, updated_at: Date }) {
   return (
-    <div className="date text-sm border-r pr-4 flex items-center">
+    <div className="date text-sm add-border pr-4 flex items-center">
       <span className="">{created_at.getFullYear()}</span>
       {created_at.getFullYear() !== updated_at.getFullYear() && (
         <>
@@ -34,7 +34,7 @@ function ProjectItem({ project }: { project: Project }) {
   return (
     <div key={project.title} className="relative p-2 grid grid-cols-[10ch_1fr_35ch] group project">
       <ProjectDates created_at={project.created_at} updated_at={project.updated_at} />
-      <div className="border-r px-2">
+      <div className="add-border px-2">
         <h2 className="title text-md font-bold">{project.title}</h2>
         <p className="description text-gray-400 text-xs">{project.description}</p>
       </div>
@@ -72,7 +72,7 @@ export default function Portfolio() {
     <div className="min-h-screen p-4">
       <div className="container mx-auto max-w-3xl" style={{ maxWidth: '920px' }}>
         <header className="flex flex-row justify-between items-center">
-          <h1 className="text-2xl font-bold my-10">Juan Garnica's latest dev project</h1>
+          <h1 className="text-2xl font-bold my-10">Juan Garnica's latest dev projects</h1>
           <h4><a href="https://github.com/jupegarnica">About</a></h4>
         </header>
         <main className="grid grid-cols-1 gap-4">
