@@ -39,7 +39,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+header {
+  margin-bottom: 2em;
+}
 .description {
   font-weight: 400;
   color: var(--muted-color);
@@ -106,4 +108,23 @@ body:has(.ee:hover) {
   );
   background-size: 800% 800%;
   animation: gradientBackground 3s ease infinite;
+}
+
+@media (max-width: 650px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project .add-border {
+    border-right: none;
+  }
+  .project * {
+    padding-left: 0;
+  }
+  .project .url {
+    margin-top: 0.6rem;
+  }
+  header {
+    flex-direction: column !important;
+  }
 }

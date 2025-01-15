@@ -72,7 +72,7 @@ export default function Portfolio() {
     <div className="min-h-screen p-4">
       <div className="container mx-auto max-w-3xl" style={{ maxWidth: '920px' }}>
         <header className="flex flex-row justify-between items-center">
-          <h1 className="text-2xl font-bold my-10">Juan Garnica's latest dev projects</h1>
+          <h1 className="text-2xl font-bold">Juan Garnica's latest dev projects</h1>
           <a className="ee text-md" href="https://github.com/jupegarnica">About</a>
         </header>
         <main className="grid grid-cols-1 gap-4">
