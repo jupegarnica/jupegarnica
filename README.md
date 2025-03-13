@@ -26,18 +26,21 @@ Please visit my peronal website [garn.dev](https://garn.dev) to see my latest pr
 
 I am deeply convinced that embracing web standards is the future of development. My focus is on modern web technologies that enhance user experience and performance. I have a strong interest in advancements that push the boundaries of what's possible on the web, and I am enthusiastic about tools that simplify development and deployment processes.
 
-| Layer      | Description                                  |
+## Favorite tech stack
+I am a strong advocate for open-source technologies and prefer to work with tools that are widely adopted in the industry. My favorite tech stack includes:
+
+| Layer      | Technology                                   |
 | ---------- | -------------------------------------------- |
-| Language   | Modern, statically-typed languages           |
-| UI         | Component-based frontend frameworks          |
-| Data       | Efficient state management systems           |
-| Testing    | Comprehensive testing tools and frameworks   |
-| API        | Lightweight and flexible server frameworks   |
-| Runtime    | Secure and performant JavaScript runtimes    |
-| CI/CD      | Integrated continuous integration platforms  |
-| Database   | Relational and non-relational database systems |
-| OS         | Open-source operating systems                |
-| Cloud      | Scalable cloud service providers             |
+| Language   | TypeScript                                   |
+| UI         | React, WebGL                                 |
+| Data       | Redux, Zustand                               |
+| Testing    | Jest, Playwright, Deno Test                  |
+| API        | Express, Koa                                 |
+| Runtime    | Deno, Node.js                                |
+| CI/CD      | GitHub Actions                               |
+| Database   | PostgreSQL, MongoDB                          |
+| Package    | JSR.io, NPM                                  |
+| Deployment | Deno Deploy                                  |
 
 ## Live coding stats
 
