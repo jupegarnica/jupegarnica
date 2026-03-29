@@ -5,7 +5,7 @@ import { Project, Repo } from "../Project.type.ts";
 
 const GITHUB_API_URL = "https://api.github.com";
 const USERNAME = "jupegarnica";
-const TOKEN = Deno.env.get("GITHUB_TOKEN"); // Use environment variables for security
+const TOKEN = Deno.env.get("GITHUB_TOKEN") || ''; // Use environment variables for security
 
 async function fetchProjects(): Promise<Repo[]> {
   let projects: Repo[] = [];
