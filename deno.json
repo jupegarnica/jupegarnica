@@ -10,7 +10,8 @@
     "build": "deno task lume",
     "dev": "deno task lume -s",
     "fetchRepos": "deno run -A --env _scripts/fetchRepos.ts",
-    "captureScreenshots": "deno run -A _scripts/captureScreenshots.ts"
+    "captureScreenshots": "deno run -A _scripts/captureScreenshots.ts",
+    "release": "deno task fetchRepos && deno task captureScreenshots && git add screenshots _data && git commit -m 'Update screenshots' && git push"
   },
   "compilerOptions": {
     "types": [
