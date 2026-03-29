@@ -105,13 +105,6 @@
     "updated_at": "2024-05-29T15:11:25.000Z"
   },
   {
-    "title": "slug-deno-dev",
-    "description": "link shortener",
-    "url": "https://slug.deno.dev/",
-    "created_at": "2023-08-04T07:55:45.000Z",
-    "updated_at": "2023-08-04T10:55:26.000Z"
-  },
-  {
     "title": "noop",
     "description": "docker noop image to override a useful one",
     "url": "https://hub.docker.com/r/jupegarnica/noop",
@@ -163,7 +156,7 @@
   {
     "title": "faker",
     "description": "An API REST to fake any other one.",
-    "url": "https://faker.deno.dev/",
+    "url": "https://faker.garn.dev/",
     "created_at": "2022-03-06T15:57:47.000Z",
     "updated_at": "2024-11-23T09:06:44.000Z"
   },
@@ -228,7 +221,7 @@
     "description": "My personal page.",
     "url": "https://garn.dev/",
     "created_at": "2020-12-02T10:23:02.000Z",
-    "updated_at": "2026-03-29T05:11:45.000Z"
+    "updated_at": "2026-03-29T05:19:56.000Z"
   },
   {
     "title": "garn-validator",
@@ -261,9 +254,9 @@
   {
     "title": "chat-interface",
     "description": "A chatbot ui",
-    "url": "https://chat-ui.deno.dev",
+    "url": "https://chat-interface.garndev.deno.net/",
     "created_at": "2017-01-06T14:44:53.000Z",
-    "updated_at": "2017-01-06T14:44:53.000Z"
+    "updated_at": "2026-03-29T05:34:32.000Z"
   },
   {
     "title": "clone-wordpress",
