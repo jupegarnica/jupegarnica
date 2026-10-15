@@ -37,6 +37,13 @@ jobs:
       - name: Build step
         run: "deno task build"
 
+      # Deno gestiona node_modules (nodeModulesDir: auto) sin package.json.
+      # Ese layout rompe el "npm i wrangler@4" que hace wrangler-action con
+      # "Cannot read properties of null (reading 'edgesOut')". El build ya
+      # terminó y el resultado está en _site/, así que se puede borrar.
+      - name: Remove Deno node_modules
+        run: rm -rf node_modules
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
