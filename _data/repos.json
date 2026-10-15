@@ -4,103 +4,103 @@
     "description": "A real-time color clock ",
     "url": "https://clock.garn.dev/",
     "created_at": "2025-03-18T15:09:44.000Z",
-    "updated_at": "2025-04-17T15:52:28.000Z"
+    "updated_at": "2026-10-15T11:56:29.000Z"
   },
   {
     "title": "jupegarnica-v2020",
     "description": "My personal webpage at 2020",
-    "url": "https://jupegarnica-v2020.garndev.deno.net/",
+    "url": "https://v2020.garn.dev",
     "created_at": "2020-11-24T10:31:46.000Z",
-    "updated_at": "2026-03-29T04:35:22.000Z"
+    "updated_at": "2026-10-15T11:56:36.000Z"
   },
   {
     "title": "jupegarnica-v2022",
     "description": "My personal webpage at 2022",
-    "url": "https://jupegarnica-v2022.garndev.deno.net/",
+    "url": "https://v2022.garn.dev",
     "created_at": "2022-11-24T10:30:53.000Z",
-    "updated_at": "2024-11-24T12:10:29.000Z"
+    "updated_at": "2026-10-15T11:56:38.000Z"
   },
   {
     "title": "jupegarnica-v2018",
     "description": "My personal webpage at 2018",
-    "url": "https://jupegarnica-v2018.garndev.deno.net/",
+    "url": "https://v2018.garn.dev",
     "created_at": "2018-11-24T10:27:08.000Z",
-    "updated_at": "2024-11-24T11:59:18.000Z"
+    "updated_at": "2026-10-15T13:51:06.000Z"
   },
   {
     "title": "tixy",
     "description": "Colorful tixy",
     "url": "https://tixy.garn.dev/",
     "created_at": "2021-11-09T16:47:09.000Z",
-    "updated_at": "2024-11-09T16:51:35.000Z"
+    "updated_at": "2026-10-15T13:51:02.000Z"
   },
   {
     "title": "dns",
     "description": "Dns resolver",
     "url": "https://dns.garn.dev/garn.dev",
     "created_at": "2023-11-09T16:28:18.000Z",
-    "updated_at": "2024-11-09T18:31:06.000Z"
+    "updated_at": "2026-10-15T11:56:45.000Z"
   },
   {
     "title": "screen",
     "description": "Screen size  made simple",
     "url": "https://screen.garn.dev/",
     "created_at": "2023-11-09T16:18:57.000Z",
-    "updated_at": "2024-11-15T20:06:59.000Z"
+    "updated_at": "2026-10-15T13:51:04.000Z"
   },
   {
     "title": "game-of-life",
     "description": "Conway's Game of Life using WebGL",
     "url": "https://game-of-life.garn.dev/",
     "created_at": "2020-11-09T15:15:27.000Z",
-    "updated_at": "2024-11-09T15:46:06.000Z"
+    "updated_at": "2026-10-15T11:56:40.000Z"
   },
   {
     "title": "ip-garn-dev",
     "description": "what's your ip?",
     "url": "https://ip.garn.dev/",
     "created_at": "2022-11-09T06:21:53.000Z",
-    "updated_at": "2024-11-12T16:27:08.000Z"
+    "updated_at": "2026-10-15T11:56:42.000Z"
   },
   {
     "title": "2048",
     "description": "web 2048",
     "url": "https://2048.garn.dev/",
     "created_at": "2018-10-30T14:20:37.000Z",
-    "updated_at": "2024-10-30T14:39:33.000Z"
+    "updated_at": "2026-10-15T15:12:55.000Z"
   },
   {
     "title": "threes",
     "description": "Threes!",
-    "url": "https://threes.deno.dev/",
+    "url": "https://threes.garn.dev",
     "created_at": "2018-10-30T09:02:50.000Z",
-    "updated_at": "2024-10-30T14:49:18.000Z"
+    "updated_at": "2026-10-15T15:12:59.000Z"
   },
   {
     "title": "commit",
     "description": "Write commit messages powered by IA ",
     "url": "https://jsr.io/@garn/commit",
     "created_at": "2024-02-08T15:44:45.000Z",
-    "updated_at": "2026-03-27T10:55:16.000Z"
+    "updated_at": "2026-10-09T09:31:28.000Z"
   },
   {
     "title": "screen-record",
     "description": "Screen recording made simple",
     "url": "https://record.garn.dev/",
     "created_at": "2024-01-09T07:44:58.000Z",
-    "updated_at": "2024-11-15T16:07:14.000Z"
+    "updated_at": "2026-10-15T11:56:27.000Z"
   },
   {
     "title": "gron",
     "description": "Make JSON greppable!",
-    "url": "https://deno.land/x/gron",
+    "url": "https://github.com/jupegarnica/gron",
     "created_at": "2023-12-17T06:23:25.000Z",
     "updated_at": "2023-12-18T07:49:23.000Z"
   },
   {
     "title": "downtime",
     "description": "A CLI tool to check the downtime of multiples websites in realtime",
-    "url": "https://deno.land/x/downtime",
+    "url": "https://jsr.io/@garn/downtime",
     "created_at": "2023-12-07T16:01:36.000Z",
     "updated_at": "2024-05-29T15:11:25.000Z"
   },
@@ -121,14 +121,14 @@
   {
     "title": "tepi",
     "description": "A .http Test Runner",
-    "url": "https://deno.land/x/tepi",
+    "url": "https://jsr.io/@garn/tepi",
     "created_at": "2022-10-04T10:54:13.000Z",
-    "updated_at": "2026-03-25T07:36:03.000Z"
+    "updated_at": "2026-04-08T10:53:50.000Z"
   },
   {
     "title": "prompt_object",
     "description": "ask for all the properties of an object, and use the current value as the type and the default value",
-    "url": "https://deno.land/x/prompt_object/",
+    "url": "https://github.com/jupegarnica/prompt_object",
     "created_at": "2022-10-02T11:32:45.000Z",
     "updated_at": "2022-10-03T09:47:40.000Z"
   },
@@ -142,7 +142,7 @@
   {
     "title": "load-env-files",
     "description": "populate .env files into enviroment variables",
-    "url": "https://deno.land/x/load_env_files",
+    "url": "https://github.com/jupegarnica/load-env-files",
     "created_at": "2022-09-17T11:08:41.000Z",
     "updated_at": "2022-09-19T07:59:20.000Z"
   },
@@ -158,7 +158,7 @@
     "description": "An API REST to fake any other one.",
     "url": "https://faker.garn.dev/",
     "created_at": "2022-03-06T15:57:47.000Z",
-    "updated_at": "2024-11-23T09:06:44.000Z"
+    "updated_at": "2026-10-15T15:22:48.000Z"
   },
   {
     "title": "garn_logger",
@@ -170,7 +170,7 @@
   {
     "title": "garn-static",
     "description": "Super simple server for static files that works in deno deploy",
-    "url": "https://deno.land/x/static",
+    "url": "https://github.com/jupegarnica/garn-static",
     "created_at": "2021-10-30T08:36:04.000Z",
     "updated_at": "2021-11-03T09:56:29.000Z"
   },
@@ -184,14 +184,14 @@
   {
     "title": "spyObject",
     "description": "A tool to subscribe to deep object changes",
-    "url": "https://deno.land/x/spy_object",
+    "url": "https://github.com/jupegarnica/spyObject",
     "created_at": "2021-09-18T08:14:04.000Z",
     "updated_at": "2021-09-18T16:03:52.000Z"
   },
   {
     "title": "garn-exec",
     "description": "A deno utility to run subprocess easily.",
-    "url": "https://deno.land/x/garn_exec",
+    "url": "https://github.com/jupegarnica/garn-exec",
     "created_at": "2021-06-09T10:37:50.000Z",
     "updated_at": "2022-02-20T18:01:42.000Z"
   },
@@ -205,7 +205,7 @@
   {
     "title": "garn-yaml",
     "description": "read or write yaml interpolating env variables",
-    "url": "https://deno.land/x/garn_yaml",
+    "url": "https://github.com/jupegarnica/garn-yaml",
     "created_at": "2020-12-04T10:27:49.000Z",
     "updated_at": "2021-03-11T08:23:31.000Z"
   },
@@ -221,7 +221,7 @@
     "description": "My personal page.",
     "url": "https://garn.dev/",
     "created_at": "2020-12-02T10:23:02.000Z",
-    "updated_at": "2026-03-29T05:19:56.000Z"
+    "updated_at": "2026-10-15T14:07:21.000Z"
   },
   {
     "title": "garn-validator",
@@ -254,9 +254,9 @@
   {
     "title": "chat-interface",
     "description": "A chatbot ui",
-    "url": "https://chat-interface.garndev.deno.net/",
+    "url": "https://chat-interface.garn.dev",
     "created_at": "2017-01-06T14:44:53.000Z",
-    "updated_at": "2026-03-29T05:34:32.000Z"
+    "updated_at": "2026-10-15T15:13:01.000Z"
   },
   {
     "title": "clone-wordpress",
